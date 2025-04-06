@@ -1,9 +1,9 @@
 import React from "react";
-
+import logo from "../../../assets/logo.jpg";
 const NavBar = () => {
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar  shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -46,8 +46,13 @@ const NavBar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          {/* Logo section */}
+          <div className="flex btn bg-white text-black btn-ghost">
+            <img src={logo} className="h-7" alt="logo" />
+            <p>Brooklyn</p>
+          </div>
         </div>
+
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
