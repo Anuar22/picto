@@ -6,6 +6,7 @@ const NavBar = () => {
       <div className="navbar  shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
+            {/* TODO: Menu for small screen start */}
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -45,12 +46,14 @@ const NavBar = () => {
                 <a>Item 3</a>
               </li>
             </ul>
+            {/* Menu for small screen end */}
           </div>
-          {/* Logo section */}
-          <div className="flex btn bg-white text-black btn-ghost">
-            <img src={logo} className="h-7" alt="logo" />
-            <p>Brooklyn</p>
+          {/*Logo section */}
+          <div className="flex btn bg-white text-black btn-ghost border-0">
+            <img src={logo} className="h-8 rounded-2xl" alt="logo" />
+            <p className="text-xl">Brooklyn</p>
           </div>
+          {/*Logo section end */}
         </div>
 
         <div className="navbar-center hidden lg:flex">
