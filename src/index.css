@@ -1,2 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+.btn-primary {
+  @apply bg-[#9929fb] border-0;
+}
