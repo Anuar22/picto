@@ -26,16 +26,12 @@ const NavBar = () => {
   );
 
   return (
-    <div className="w-full">
-      <div className="navbar shadow-sm flex justify-between px-4 lg:px-20 py-2">
-        <div className="flex">
+    <div className="w-full px-[27px]">
+      <div className="navbar flex justify-between mx-auto w-full xl:px-50">
+        <div className="flex items-center">
           <div className="dropdown">
             {/* TODO: Menu for small screen start */}
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-ghost lg:hidden "
-            >
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -53,21 +49,24 @@ const NavBar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow font-semibold"
+              className="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow font-semibold flex-nowrap"
             >
               {menu}
             </ul>
             {/* Menu for small screen end */}
           </div>
 
-          <div /* Logo section */ className="flex bg-whit border-0 gap-1">
+          {/* Logo and title for small screen start */}
+          <div className="flex bg-whit border-0 gap-1 lg:pe-10">
             <img src={logo} className="h-14 rounded-2xl" alt="logo" />
             <p className="text-4xl font-semibold my-auto">Brooklyn</p>
           </div>
         </div>
 
-        <div className=" hidden lg:flex">
-          <ul className="menu menu-horizontal text-xl px-1 gap-3">{menu}</ul>
+        <div className="hidden lg:flex items-center justify-between gap-5">
+          <ul className="menu menu-horizontal lg:text-xl text-xl px-1 gap-3 md:shrink-0">
+            {menu}
+          </ul>
           <a className="btn btn-lg btn-primary">Contact</a>
         </div>
       </div>
