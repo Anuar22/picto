@@ -2,28 +2,20 @@ import React from "react";
 import logo from "../../../assets/logo.jpg";
 const NavBar = () => {
   //   Menu list for the navbar
-  const menu = (
-    <>
-      <li>
-        <a>Home</a>
-      </li>
-      <li>
-        <a>About</a>
-      </li>
-      <li>
-        <a>Process</a>
-      </li>
-      <li>
-        <a>Portfolio</a>
-      </li>
-      <li>
-        <a>Blog</a>
-      </li>
-      <li>
-        <a>Services</a>
-      </li>
-    </>
-  );
+
+  const navItems = [
+    { id: 1, name: "Home" },
+    { id: 2, name: "About" },
+    { id: 3, name: "Process" },
+    { id: 4, name: "Portfolio" },
+    { id: 5, name: "Blog" },
+    { id: 6, name: "Services" },
+  ];
+  const menu = navItems.map((item) => (
+    <li key={item.id}>
+      <a className="hover:text-purple-700">{item.name}</a>
+    </li>
+  ));
 
   return (
     <div className="w-full px-[27px]">
