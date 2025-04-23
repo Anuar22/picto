@@ -1,8 +1,9 @@
 import React from "react";
-import logo from "../../../assets/logo.jpg";
+import logo from "../../../assets/logo.png";
+import { useNavigate } from "react-router-dom";
 const NavBar = () => {
+    const navigate = useNavigate();
   //   Menu list for the navbar
-
   const navItems = [
     { id: 1, name: "Home" },
     { id: 2, name: "About" },
@@ -10,10 +11,20 @@ const NavBar = () => {
     { id: 4, name: "Portfolio" },
     { id: 5, name: "Blog" },
     { id: 6, name: "Services" },
+    { id: 7, name: "Testimonials Kh KK" },
   ];
+
+//   Navigator function
+const handleNavigate = (name)=>{
+    // WORKING HERE [Three work problems]
+    console.log(name.toLowerCase());
+    name?.includes(" ") ? name = name.replace(" ", "-") : name;
+    navigate(`/${name}`);
+}
+
   const menu = navItems.map((item) => (
     <li key={item.id}>
-      <a className="hover:text-purple-700">{item.name}</a>
+      <a className="hover:text-purple-700" onClick={()=>handleNavigate(item.name?.toLowerCase())}>{item.name}</a>
     </li>
   ));
 
