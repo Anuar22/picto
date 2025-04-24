@@ -2,29 +2,33 @@ import React from "react";
 import logo from "../../../assets/logo.png";
 import { useNavigate } from "react-router-dom";
 const NavBar = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   //   Menu list for the navbar
   const navItems = [
-    { id: 1, name: "Home" },
-    { id: 2, name: "About" },
-    { id: 3, name: "Process" },
-    { id: 4, name: "Portfolio" },
-    { id: 5, name: "Blog" },
-    { id: 6, name: "Services" },
-    { id: 7, name: "Testimonials Kh KK" },
+    { id: 1, name: "Home", url: "Home" },
+    { id: 2, name: "About", url: "About" },
+    { id: 3, name: "Process", url: "Process" },
+    { id: 4, name: "Portfolio", url: "Portfolio" },
+    { id: 5, name: "Blog", url: "Blog" },
+    { id: 6, name: "Services", url: "Services" },
   ];
 
-//   Navigator function
-const handleNavigate = (name)=>{
-    // WORKING HERE [Three work problems]
-    console.log(name.toLowerCase());
-    name?.includes(" ") ? name = name.replace(" ", "-") : name;
-    navigate(`/${name}`);
-}
+  //   Navigator function
+  const handleNavigate = (urlLink) => {
+    // WORKING HERE [Three word problems]
+    console.log(urlLink.toLowerCase());
+    urlLink?.includes(" ") ? (urlLink = urlLink.replaceAll(" ", "-")) : urlLink;
+    navigate(`/#${urlLink}`);
+  };
 
   const menu = navItems.map((item) => (
     <li key={item.id}>
-      <a className="hover:text-purple-700" onClick={()=>handleNavigate(item.name?.toLowerCase())}>{item.name}</a>
+      <a
+        className="hover:text-purple-700"
+        onClick={() => handleNavigate(item.url?.toLowerCase())}
+      >
+        {item.name}
+      </a>
     </li>
   ));
 
@@ -33,7 +37,7 @@ const handleNavigate = (name)=>{
       <div className="navbar flex justify-between mx-auto w-full xl:px-50">
         <div className="flex items-center">
           <div className="dropdown">
-            {/* TODO: Menu for small screen start */}
+            {/* Menu for small screen start */}
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
