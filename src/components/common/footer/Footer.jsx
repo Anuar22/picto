@@ -16,13 +16,13 @@ const Footer = () => {
   ];
 
   return (
-    <div className="bg-[#2A374A] p-4 mt-4 h-[320px] flex justify-between">
-      <div className="flex justify-between mx-0 lg:px-[15%] items-center h-full w-full text-neutral-200 lg:bg-red-700 md:bg-amber-100">
+    <div className="bg-[#2A374A] p-4 mt-4 h-[320px] flex justify-between relative">
+      <div className="flex justify-between mx-0 lg:px-[15%] items-center h-full w-full text-neutral-200 lg:bg-red-700 md:bg-amber-100 absolute">
         <div className="flex bg-whit border-0 gap-1 lg:me-10 shrink-0">
           <img src={logo} className="h-14 rounded-2xl" alt="logo" />
           <p className="text-4xl font-semibold my-auto">Brooklyn</p>
         </div>
-        <div className="mx-3 flex">
+        <div className="mx-3 flex lg:bg-red-300 flex-wrap">
           {navItems.map((item) => (
             <a
               key={item.id}
