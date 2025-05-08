@@ -22,7 +22,7 @@ const Footer = () => {
           <img src={logo} className="h-14 rounded-2xl" alt="logo" />
           <p className="text-4xl font-semibold my-auto">Brooklyn</p>
         </div>
-        <div className="mx-3 flex lg:bg-red-300 flex-wrap row col-span-2">
+        <div className="mx-3 flex lg:bg-red-300 md:bg-green-700 flex-wrap row">
           {navItems.map((item) => (
             <a
               key={item.id}
