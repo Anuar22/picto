@@ -5,20 +5,11 @@ const Home = () => {
     <div className="h-[800px]">
       <p className=" text-center text-6xl pt-[25%] ">Hello</p>
       <p>Hello world</p>
-      <div class="bg-white dark:bg-gray-800 text-black rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5">
-        <div>
-          <span className="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg">
-            <svg className="h-6 w-6 stroke-white"></svg>
-          </span>
-        </div>
-        <h3 className="text-gray-900 dark:text-white mt-5 text-base font-medium tracking-tight ">
-          Writes upside-down
-        </h3>
-        <p className="text-gray-500 dark:text-gray-400 mt-2 text-sm ">
-          The Zero Gravity Pen can be used to write in any orientation,
-          including upside-down. It even works in outer space.
-        </p>
-      </div>
+<calendar-date class="cally bg-base-100 border border-base-300 shadow-lg rounded-box">
+  <svg aria-label="Previous" className="fill-current size-4" slot="previous" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M15.75 19.5 8.25 12l7.5-7.5"></path></svg>
+  <svg aria-label="Next" className="fill-current size-4" slot="next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg>
+  <calendar-month></calendar-month>
+</calendar-date>
     </div>
   );
 };

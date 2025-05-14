@@ -1,27 +1,27 @@
-import React from "react";
-import logo from "../../../assets/logo.png";
-import { useNavigate } from "react-router-dom";
+import React from 'react';
+import logo from '../../../assets/logo.png';
+import { useNavigate } from 'react-router-dom';
 const NavBar = () => {
   const navigate = useNavigate();
   //   Menu list for the navbar
   const navItems = [
-    { id: 1, name: "Home", url: "Home" },
-    { id: 2, name: "About", url: "About" },
-    { id: 3, name: "Process", url: "Process" },
-    { id: 4, name: "Portfolio", url: "Portfolio" },
-    { id: 5, name: "Blog", url: "Blog" },
-    { id: 6, name: "Services", url: "Services" },
+    { id: 1, name: 'Home', url: 'Home' },
+    { id: 2, name: 'About', url: 'About' },
+    { id: 3, name: 'Process', url: 'Process' },
+    { id: 4, name: 'Portfolio', url: 'Portfolio' },
+    { id: 5, name: 'Blog', url: 'Blog' },
+    { id: 6, name: 'Services', url: 'Services' }
   ];
 
   //   Navigator function
-  const handleNavigate = (urlLink) => {
+  const handleNavigate = urlLink => {
     // WORKING HERE [Three word problems]
     console.log(urlLink.toLowerCase());
-    urlLink?.includes(" ") ? (urlLink = urlLink.replaceAll(" ", "-")) : urlLink;
+    urlLink?.includes(' ') ? (urlLink = urlLink.replaceAll(' ', '-')) : urlLink;
     navigate(`/#${urlLink}`);
   };
 
-  const menu = navItems.map((item) => (
+  const menu = navItems.map(item => (
     <li key={item.id}>
       <a
         className="hover:text-purple-700"
@@ -74,6 +74,57 @@ const NavBar = () => {
           <ul className="menu menu-horizontal lg:text-xl text-xl px-1 gap-3 md:shrink-0">
             {menu}
           </ul>
+          {/* Dark mode button */}
+          
+          <label className="toggle text-base-content bg-purple-700">
+            <input
+              type="checkbox"
+              value="synthwave"
+              className="theme-controller"
+            />
+            <svg
+              aria-label="sun"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <g
+                strokeLinejoin="round"
+                strokeLinecap="round"
+                strokeWidth="2"
+                fill="none"
+                stroke="currentColor"
+              >
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2"></path>
+                <path d="M12 20v2"></path>
+                <path d="m4.93 4.93 1.41 1.41"></path>
+                <path d="m17.66 17.66 1.41 1.41"></path>
+                <path d="M2 12h2"></path>
+                <path d="M20 12h2"></path>
+                <path d="m6.34 17.66-1.41 1.41"></path>
+                <path d="m19.07 4.93-1.41 1.41"></path>
+              </g>
+            </svg>
+
+            <svg
+              aria-label="moon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <g
+                strokeLinejoin="round"
+                strokeLinecap="round"
+                strokeWidth="2"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+              </g>
+            </svg>
+          </label>
+
+          {/* Dark mode button end */}
+
           <a className="btn btn-lg btn-primary">Contact</a>
         </div>
       </div>

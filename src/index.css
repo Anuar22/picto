@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 .btn-primary {
   @apply bg-[#9929fb] border-0;
