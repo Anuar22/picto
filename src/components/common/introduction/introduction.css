@@ -1,0 +1,7 @@
+.bg-highlight {
+  background: linear-gradient(to top, rgb(222, 167, 1) 50%, transparent 50%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-left: 2px;
+  padding-right: 2px;
+}

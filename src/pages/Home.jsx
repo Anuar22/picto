@@ -1,10 +1,10 @@
 import React from "react";
+import Introduction from "../components/common/introduction/introduction";
 
 const Home = () => {
   return (
     <div className="h-[800px]">
-      <p className=" text-center text-6xl pt-[25%] ">Hello</p>
-      <p className="">Hello world</p>
+      <Introduction />
     </div>
   );
 };

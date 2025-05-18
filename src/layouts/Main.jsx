@@ -15,7 +15,8 @@ const Main = () => {
 
   return (
     <ThemeContext.Provider value={[theme, setTheme]}>
-      <div data-theme={theme}>
+      {/* WORKING */}
+      <div data-theme={theme} className="">
         <NavBar />
         <Outlet></Outlet>
         <Footer />

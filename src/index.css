@@ -3,7 +3,6 @@
 @plugin "daisyui" {
   themes: light --default, dark --prefersdark, cupcake;
 }
-@custom-variant dark (&:where([data-theme=night], [data-theme=night] *));
 
 .btn-primary {
   @apply bg-[#9929fb] border-0;
