@@ -39,7 +39,7 @@ const Introduction = () => {
         </a>
         </div>
         {/* WORKING */}
-        <div className="flex pb-30">
+        <div className="flex mb-30 mt-40">
             {informationSummaryData.map((item) => (
                 <InformationSummary key={item.id} item={item} />
             ))}
