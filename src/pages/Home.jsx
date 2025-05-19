@@ -1,10 +1,15 @@
 import React from "react";
-import Introduction from "../components/common/introduction/introduction";
+import Introduction from "../components/introduction/Introduction";
+import Profile from "../components/profile/Profile";
 
+// TODO: Add a background image to the home page
 const Home = () => {
   return (
-    <div className="h-[800px]">
-      <Introduction />
+    <div className={``}>
+        <div className="w-full h-full md:w-[90%] lg:w-[75%] mx-auto">
+      <Introduction/>
+      <Profile/>
+    </div>
     </div>
   );
 };

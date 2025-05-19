@@ -11,7 +11,6 @@ const Main = () => {
     const darkTheme = localStorage.getItem("dark") == "true" ? "dark" : "light";
     setTheme(darkTheme);
   }, [theme]);
-  console.log(theme);
 
   return (
     <ThemeContext.Provider value={[theme, setTheme]}>
