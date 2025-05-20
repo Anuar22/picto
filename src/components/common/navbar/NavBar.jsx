@@ -52,8 +52,8 @@ const NavBar = () => {
   }, [theme]);
 
   return (
-    <div className="w-full px-[27px]">
-      <div className="navbar flex justify-between mx-auto w-full xl:px-50">
+    <div className="w-full">
+      <div className="navbar flex justify-between mx-auto w-full">
         <div className="flex items-center">
           <div className="dropdown">
             {/* Menu for small screen start */}
@@ -89,7 +89,7 @@ const NavBar = () => {
           </div>
         </div>
 
-        <div className=" lg:flex items-center justify-between gap-5">
+        <div className=" lg:flex items-center justify-between ">
           <ul className="hidden lg:flex menu menu-horizontal lg:text-xl text-xl px-1 gap-3 md:shrink-0">
             {menu}
           </ul>

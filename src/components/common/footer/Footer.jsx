@@ -16,7 +16,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="bg-[#2A374A]  mt-4 h-[320px] flex justify-between relative">
+    <div className="bg-[#2A374A]  mt-4 h-[320px] flex justify-between relative w-full">
       <div className="flex justify-between mx-0 lg:px-[2%] xl:px-[10%] 2xl:px-[15%] items-center h-full w-full text-neutral-200 absolute">
         <div className="flex bg-whit border-0 gap-1 lg:me-10 shrink-0">
           <img src={logo} className="h-14 rounded-2xl" alt="logo" />

@@ -5,8 +5,8 @@
 }
 
 .btn-primary {
-  @apply bg-[#9929fb] border-0 text-white;
+  @apply bg-[#A53DFF] border-0 text-white;
 }
-body{
-    font-family: 'Work Sans', sans-serif;
+body {
+  font-family: "Work Sans", sans-serif;
 }

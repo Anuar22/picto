@@ -7,7 +7,7 @@ const Introduction = () => {
     {
       id: 1,
       title: "Experience",
-      description: "15 Y",
+      description: "15 Y.",
     },
     {
       id: 2,
@@ -17,13 +17,14 @@ const Introduction = () => {
     {
       id: 3,
       title: "Happy Clients",
-      description: "15+",
+      description: "58",
     },
   ];
+
   return (
-    <div className=" mx-auto flex justify-between">
-      <div className="w-full lg:pt-30 flex flex-col justify-between">
-        <div>
+    <div className="flex justify-between pt-32">
+      <div className="w-full flex flex-col justify-between pe-40">
+        <div className="">
           <p className="text-7xl font-medium">
             Hello, I’m <br />
             Brooklyn Gilbert
@@ -39,14 +40,18 @@ const Introduction = () => {
           </a>
         </div>
         {/* WORKING */}
-        <div className="flex mb-30 mt-40">
+        <div className="flex">
           {informationSummaryData.map((item) => (
             <InformationSummary key={item.id} item={item} />
           ))}
         </div>
       </div>
-      <div className="w-full">
-        <img className="w-[636px] ms-auto" src={person} alt="person" />
+      <div className="">
+        <img
+          className="w-[636px] rounded-3xl overflow-hidden ms-auto"
+          src={person}
+          alt="person"
+        />
       </div>
     </div>
   );
