@@ -6,10 +6,10 @@ import Profile from "../components/profile/Profile";
 const Home = () => {
   return (
     <div className={``}>
-        <div className="w-full h-full md:w-[90%] lg:w-[75%] mx-auto">
-      <Introduction/>
-      <Profile/>
-    </div>
+      <div className="w-full h-full md:w-[90%] lg:w-[75%] mx-auto">
+        <Introduction />
+        <Profile />
+      </div>
     </div>
   );
 };
