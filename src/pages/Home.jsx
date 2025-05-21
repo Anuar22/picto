@@ -6,7 +6,7 @@ import Profile from "../components/profile/Profile";
 const Home = () => {
   return (
     <div className={``}>
-      <div className="w-full h-full  mx-auto">
+      <div className="content  mx-auto">
         <Introduction />
         <Profile />
       </div>

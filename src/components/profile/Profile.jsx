@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 const Profile = () => {
     return (
-        <div className='flex justify-between items-center bg-blue-100 rounded-2xl p-5'>
+        <div className='flex justify-between items-center mt-56 bg-blue-100 rounded-2xl p-5'>
             <div className='bg-white'>
                 <img src={person } alt="" />
             </div>

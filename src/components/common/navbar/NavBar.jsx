@@ -36,7 +36,7 @@ const NavBar = () => {
   const menu = navItems.map((item) => (
     <li key={item.id}>
       <a
-        className="hover:text-purple-700"
+        className="hover:text-purple-700 px-6 py-3"
         onClick={() => handleNavigate(item.url?.toLowerCase())}
       >
         {item.name}
@@ -53,8 +53,8 @@ const NavBar = () => {
 
   return (
     <div className="w-full">
-      <div className="navbar flex justify-between mx-auto w-full">
-        <div className="flex items-center">
+      <div className="navbar flex justify-between mx-auto content">
+        <div className="flex items-center justify-between">
           <div className="dropdown">
             {/* Menu for small screen start */}
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -75,7 +75,7 @@ const NavBar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow font-semibold flex-nowrap"
+              className="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow font-semibold flex-nowrap bg-white text-black"
             >
               {menu}
             </ul>
@@ -83,14 +83,14 @@ const NavBar = () => {
           </div>
 
           {/* Logo and title for small screen start */}
-          <div className="flex bg-whit border-0 gap-1 lg:pe-10">
+          <div className="flex border-0 w-[213px] h-[56px]">
             <img src={logo} className="h-14 rounded-2xl" alt="logo" />
-            <p className="text-4xl font-semibold my-auto">Brooklyn</p>
+            <p className="text-[32px] my-auto ms-[12px] font-semibold">Brooklyn</p>
           </div>
         </div>
 
-        <div className=" lg:flex items-center justify-between ">
-          <ul className="hidden lg:flex menu menu-horizontal lg:text-xl text-xl px-1 gap-3 md:shrink-0">
+        <div className=" lg:flex items-center">
+          <ul className="hidden lg:flex menu menu-horizontal text-[16px] font-medium md:shrink-0">
             {menu}
           </ul>
 

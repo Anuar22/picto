@@ -16,7 +16,7 @@ const Main = () => {
     <ThemeContext.Provider value={[theme, setTheme]}>
       {/* WORKING */}
       {/* <div data-theme={theme} className="xl:px-50 mx-auto max-w-[1920px]"> */}
-      <div data-theme={theme} className="w-[1320px] mx-auto max-w-[1920px]">
+      <div data-theme={theme} className="mx-auto max-w-[1920px]">
         <NavBar />
         <Outlet></Outlet>
         <Footer />
