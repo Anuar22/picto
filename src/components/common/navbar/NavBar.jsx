@@ -20,7 +20,6 @@ const NavBar = () => {
 
   //   Navigator function
   const handleNavigate = (urlLink) => {
-    // WORKING HERE [Three word problems]
     console.log(urlLink.toLowerCase());
     urlLink?.includes(" ") ? (urlLink = urlLink.replaceAll(" ", "-")) : urlLink;
     navigate(`/#${urlLink}`);
@@ -85,7 +84,9 @@ const NavBar = () => {
           {/* Logo and title for small screen start */}
           <div className="flex border-0 w-[213px] h-[56px]">
             <img src={logo} className="h-14 rounded-2xl" alt="logo" />
-            <p className="text-[32px] my-auto ms-[12px] font-semibold">Brooklyn</p>
+            <p className="text-[32px] my-auto ms-[12px] font-semibold">
+              Brooklyn
+            </p>
           </div>
         </div>
 
@@ -94,7 +95,7 @@ const NavBar = () => {
             {menu}
           </ul>
 
-          {/* WORKING START: Dark mode button */}
+          {/* Dark mode button */}
           <label className="swap swap-rotate px-3">
             <input
               type="checkbox"
@@ -120,7 +121,7 @@ const NavBar = () => {
               <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
             </svg>
           </label>
-          {/* WORKING END: Dark mode button end */}
+          {/* Dark mode button end */}
 
           <a className="btn btn-lg btn-primary">Contact</a>
         </div>

@@ -4,7 +4,7 @@ import "./introduction.css";
 import InformationSummary from "./InformationSummary";
 import { ThemeContext } from "../../layouts/Main";
 const Introduction = () => {
-    const [theme] = useContext(ThemeContext)
+  const [theme] = useContext(ThemeContext);
   const informationSummaryData = [
     {
       id: 1,
@@ -41,18 +41,19 @@ const Introduction = () => {
             Say Hello!
           </a>
         </div>
-        {/* WORKING */}
-        <div className="flex">
+        <div className="flex z-0">
           {informationSummaryData.map((item) => (
             <InformationSummary key={item.id} item={item} />
           ))}
         </div>
       </div>
-        <img
-          className={`h-[636px] w-[536px] ${theme=='dark'?'bg-gray-300':'bg-white '} rounded-3xl`}
-          src={person}
-          alt="person"
-        />
+      <img
+        className={`h-[636px] w-[536px] ${
+          theme == "dark" ? "bg-gray-300" : "bg-white "
+        } rounded-3xl`}
+        src={person}
+        alt="person"
+      />
     </div>
   );
 };
