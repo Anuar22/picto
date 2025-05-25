@@ -2,10 +2,25 @@ import React from "react";
 import person from "../../assets/images/person.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
+import {
+  faBehance,
+  faDribbble,
+  faFacebookF,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 const Profile = () => {
+  // Social icons and links
+  const socialIcons = [
+    { icon: faFacebookF, link: "#" },
+    { icon: faDribbble, link: "#" },
+    { icon: faInstagram, link: "#" },
+    { icon: faLinkedin, link: "#" },
+    { icon: faBehance, link: "#" },
+  ];
+
   return (
-    <div className="mt-56 rounded-2xl bg-gray-300 p-28">
+    <div className="mt-56 rounded-2xl bg-gray-200 p-28">
       <div className="flex justify-between items-center">
         <img
           className="w-[424px] bg-[#F0F1F3] rounded-xl"
@@ -42,18 +57,19 @@ const Profile = () => {
       </div>
       {/* WORKING: on social media section under picture section */}
       {/* TODO: make a component to display social icons and keep alignment right*/}
-      <div className="w-[424px] flex justify-center ">
-        <div className="w-66 h-18 mt-[-50px] z-50 absolute bg-white">
-          <a href="#" className="p-3.75 bg-white ">
-            <FontAwesomeIcon
-              icon={faFacebookF}
-              className="w-4.5 h-4.5 text-[#9929fb]"
-            />
-          </a>
-          <a href="">B</a>
-          <a href="">I</a>
-          <a href="">L</a>
-          <a href="">Be</a>
+      <div className="w-[424px]">
+        <div className="flex justify-center">
+          <div className="w-66 h-18 mt-[-36px] z-50 absolute text-center bg-white rounded-[4px] flex justify-center items-center">
+            {socialIcons.map((item, index) => (
+              <a href={item.link} className="p-3.75 bg-white" key={index}>
+                <FontAwesomeIcon
+                  icon={item.icon}
+                  size="2xl"
+                  className="w-4.5 h-4.5 text-[#9929fb]"
+                />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </div>
