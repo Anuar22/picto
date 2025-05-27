@@ -13,11 +13,28 @@ body {
 .content {
   @media screen and (min-width: 1024px) {
     width: 1320px;
+    margin-inline: auto;
   }
   @media screen and (max-width: 1320px) {
     width: 100%;
   }
 }
-.bg-primary{
-    background-color: #A53DFF;
+.bg-primary {
+  background-color: #a53dff;
+}
+.first-layer {
+  background: #ffffff;
+  background: linear-gradient(
+    25deg,
+    rgba(255, 255, 255, 0) 66%,
+    rgba(218, 77, 241, 0.39) 100%,
+    rgba(218, 77, 241, 0.3) 93%,
+    rgba(218, 77, 241, 0.26) 88%
+  );
+}
+.section-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  color: #132238;
 }

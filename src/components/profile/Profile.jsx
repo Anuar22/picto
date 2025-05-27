@@ -11,12 +11,12 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { ThemeContext } from "../../layouts/Main";
 const Profile = () => {
-    const [theme] = useContext(ThemeContext);
-    const [dark, setDark] = useState(theme === "dark");
-    useEffect(()=>{
-        theme === "dark" ? setDark(true) : setDark(false);
-    }, [theme]);
-    
+  const [theme] = useContext(ThemeContext);
+  const [dark, setDark] = useState(theme === "dark");
+  useEffect(() => {
+    theme === "dark" ? setDark(true) : setDark(false);
+  }, [theme]);
+
   // Social icons and links
   const socialIcons = [
     { icon: faFacebookF, link: "#" },
@@ -27,7 +27,13 @@ const Profile = () => {
   ];
 
   return (
-    <div className={`mt-56 rounded-2xl ${dark?'bg-gray-400':'bg-gray-200'} p-28`}> {/* bg-gray-200 */}
+    <div
+      className={`mt-56 rounded-2xl ${
+        dark ? "bg-gray-400" : "bg-gray-200"
+      } p-28`}
+    >
+      {" "}
+      {/* bg-gray-200 */}
       <div className="flex justify-between items-center">
         <img
           className="w-[424px] bg-[#F0F1F3] rounded-xl"
@@ -36,26 +42,34 @@ const Profile = () => {
         />
 
         <div className="w-134">
-          <h2 className={`text-[38px] font-semibold mb-8 ${dark && 'text-black'}`}>
+          <h2
+            className={`text-[38px] font-semibold mb-8 ${dark && "text-black"}`}
+          >
             I am Professional User Experience Designer
           </h2>
-          <div className={`text-[18px] font-normal ${dark?'text-gray-800':'text-gray-600'}`}>
-          <p className={``}>
-            I design and develop services for customers specializing creating
-            stylish, modern websites, web services and online stores. My passion
-            is to design digital user experiences.
-          </p>
-          <p className="mt-3">
-            I design and develop services for customers specializing creating
-            stylish, modern websites, web services.
-          </p>
+          <div
+            className={`text-[18px] font-normal ${
+              dark ? "text-gray-800" : "text-gray-600"
+            }`}
+          >
+            <p className={``}>
+              I design and develop services for customers specializing creating
+              stylish, modern websites, web services and online stores. My
+              passion is to design digital user experiences.
+            </p>
+            <p className="mt-3">
+              I design and develop services for customers specializing creating
+              stylish, modern websites, web services.
+            </p>
           </div>
           <div className="mt-8">
             <a className="btn btn-primary w-33 h-12 text-[16px]" href="#">
               My Project
             </a>
             <a
-              className={`btn border-[#9929fb] text-[#9929fb] w-47.5 h-12 ms-4 text-[16px] ${dark && 'bg-transparent'}`}
+              className={`btn border-[#9929fb] text-[#9929fb] w-47.5 h-12 ms-4 text-[16px] ${
+                dark && "bg-transparent"
+              }`}
               href="#"
             >
               <FontAwesomeIcon icon={faDownload} style={{ color: "#9929fb" }} />{" "}
