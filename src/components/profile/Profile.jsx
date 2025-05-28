@@ -32,8 +32,6 @@ const Profile = () => {
         dark ? "bg-gray-400" : "bg-gray-200"
       } p-28`}
     >
-      {" "}
-      {/* bg-gray-200 */}
       <div className="flex justify-between items-center">
         <img
           className="w-[424px] bg-[#F0F1F3] rounded-xl"

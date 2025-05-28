@@ -6,6 +6,7 @@ import WorkProcess from "../components/workProcess/WorkProcess";
 import Portfolio from "../components/portfolio/Portfolio";
 import WorkTogether from "../components/workTogether/WorkTogether";
 import Blog from "../components/blog/Blog";
+import Profession from "../components/profession/Profession";
 
 // TODO: Add a background image to the home page
 const Home = () => {
@@ -27,6 +28,9 @@ const Home = () => {
       </div>
       <div className="h-196 ">
         <Blog />
+      </div>
+      <div className="h-219 bg-[#F0F1F3]">
+        <Profession/>
       </div>
     </div>
   );
