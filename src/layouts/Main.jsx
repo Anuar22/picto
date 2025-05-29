@@ -51,7 +51,7 @@ const Main = () => {
         <a
           onClick={scrollToTop}
           className={`fixed end-5 bottom-10 flex bg-primary w-15 h-15 justify-center items-center rounded-full text-white z-50 transition delay-150 duration-500 ease-in-out hover:scale-120 hover:cursor-pointer ${
-            position < 200 && "scale-120"
+            position < 200 && "scale-0"
           }`}
         >
           <FontAwesomeIcon icon={faAngleUp} size="2xl" />
