@@ -7,6 +7,8 @@ import Portfolio from "../components/portfolio/Portfolio";
 import WorkTogether from "../components/workTogether/WorkTogether";
 import Blog from "../components/blog/Blog";
 import Profession from "../components/profession/Profession";
+import HappyClients from "../components/happyClients/HappyClients";
+import Testimonial from "../components/testimonial/Testimonial";
 
 // TODO: Add a background image to the home page
 const Home = () => {
@@ -30,7 +32,13 @@ const Home = () => {
         <Blog />
       </div>
       <div className="h-219 bg-[#F0F1F3]">
-        <Profession/>
+        <Profession />
+      </div>
+      <div className="h-138">
+        <HappyClients />
+      </div>
+      <div className="h-133.5">
+        <Testimonial />
       </div>
     </div>
   );
