@@ -35,8 +35,8 @@ const Main = () => {
 
   // Scroll to top function
   const scrollToTop = () => {
-    // animateScroll.scrollToTop(options); /* To go to top */
-    animateScroll.scrollToBottom(options); /* To go to Bottom for development */
+    animateScroll.scrollToTop(options); /* To go to top */
+    // animateScroll.scrollToBottom(options); /* To go to Bottom for development */
   };
 
   return (
