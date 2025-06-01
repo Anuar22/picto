@@ -2,29 +2,14 @@ import React, { useContext, useEffect, useState } from "react";
 import person from "../../assets/images/person.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import {
-  faBehance,
-  faDribbble,
-  faFacebookF,
-  faInstagram,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
 import { ThemeContext } from "../../layouts/Main";
+import SocialMedia from "../common/socialMedia/SocialMedia";
 const Profile = () => {
   const [theme] = useContext(ThemeContext);
   const [dark, setDark] = useState(theme === "dark");
   useEffect(() => {
     theme === "dark" ? setDark(true) : setDark(false);
   }, [theme]);
-
-  // Social icons and links
-  const socialIcons = [
-    { icon: faFacebookF, link: "#" },
-    { icon: faDribbble, link: "#" },
-    { icon: faInstagram, link: "#" },
-    { icon: faLinkedin, link: "#" },
-    { icon: faBehance, link: "#" },
-  ];
 
   return (
     <div
@@ -78,16 +63,8 @@ const Profile = () => {
       </div>
       <div className="w-[424px]">
         <div className="flex justify-center">
-          <div className="w-66 h-18 mt-[-36px] z-50 absolute text-center bg-white rounded-[4px] flex justify-center items-center">
-            {socialIcons.map((item, index) => (
-              <a href={item.link} className="p-3.75 bg-white" key={index}>
-                <FontAwesomeIcon
-                  icon={item.icon}
-                  size="2xl"
-                  className="w-4.5 h-4.5 text-[#9929fb]"
-                />
-              </a>
-            ))}
+          <div className="w-66 h-18 mt-[-36px] z-50 absolute text-center bg-white rounded-[4px] center">
+            <SocialMedia />
           </div>
         </div>
       </div>

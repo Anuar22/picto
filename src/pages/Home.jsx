@@ -9,6 +9,7 @@ import Blog from "../components/blog/Blog";
 import Profession from "../components/profession/Profession";
 import HappyClients from "../components/happyClients/HappyClients";
 import Testimonial from "../components/testimonial/Testimonial";
+import Contact from "../components/contact/Contact";
 
 // TODO: Add a background image to the home page
 const Home = () => {
@@ -19,7 +20,7 @@ const Home = () => {
         <Profile />
       </div>
       <div className=" w-full h-100 absolute top-0 end-0 first-layer" />
-      <div className="bg-[#F0F1F3] h-249.5 flex justify-center items-center relative">
+      <div className="bg-[#F0F1F3] h-249.5 center relative">
         <WorkProcess />
       </div>
       <div className="h-368">
@@ -39,6 +40,9 @@ const Home = () => {
       </div>
       <div className="h-133.5">
         <Testimonial />
+      </div>
+      <div className="h-165 ">
+        <Contact />
       </div>
     </div>
   );
