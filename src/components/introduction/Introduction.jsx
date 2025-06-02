@@ -48,7 +48,7 @@ const Introduction = () => {
         </div>
       </div>
       <img
-        className={`h-[636px] w-[536px] ${
+        className={`h-[636px] w-[536px] shadow-2xl shadow-gray-200 ${
           theme == "dark" ? "bg-gray-300" : "bg-white "
         } rounded-3xl`}
         src={person}

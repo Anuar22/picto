@@ -10,16 +10,17 @@ import Profession from "../components/profession/Profession";
 import HappyClients from "../components/happyClients/HappyClients";
 import Testimonial from "../components/testimonial/Testimonial";
 import Contact from "../components/contact/Contact";
+import { HashLoader } from "react-spinners";
 
-// TODO: Add a background image to the home page
 const Home = () => {
   return (
-    <div className={`relative`}>
-      <div className="content mx-auto">
-        <Introduction />
-        <Profile />
-      </div>
-      <div className=" w-full h-100 absolute top-0 end-0 first-layer" />
+    <div className={`relative `}>
+        <div /* Gradient background */ className="background-layer">
+            <div className="content mx-auto -mb-28 z-10 relative">
+                <Introduction />
+                <Profile />
+            </div>
+        </div>
       <div className="bg-[#F0F1F3] h-249.5 center relative">
         <WorkProcess />
       </div>

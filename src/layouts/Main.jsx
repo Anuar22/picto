@@ -13,8 +13,8 @@ const Main = () => {
   const [theme, setTheme] = useState("");
   const [position, setPosition] = useState(0);
 
+  /* Dark mode management */
   useEffect(() => {
-    /* Dark mode management */
     const darkTheme = localStorage.getItem("dark") == "true" ? "dark" : "light";
     setTheme(darkTheme);
   }, [theme]);
@@ -32,11 +32,11 @@ const Main = () => {
     duration: 500,
     smooth: true,
   };
-
+ 
   // Scroll to top function
   const scrollToTop = () => {
-    // animateScroll.scrollToTop(options); /* To go to top */
-    animateScroll.scrollToBottom(options); /* To go to Bottom for development */
+    animateScroll.scrollToTop(options); /* To go to top */
+    // animateScroll.scrollToBottom(options); /* To go to Bottom for development */
   };
 
   return (
@@ -44,18 +44,20 @@ const Main = () => {
       {/* <div data-theme={theme} className="xl:px-50 mx-auto max-w-[1920px]"> */}
       <div data-theme={theme} className="mx-auto max-w-[1920px] relative">
         <NavBar />
-        <Outlet></Outlet>
+        <Outlet/>
         <Footer />
 
         {/* Scroll to top button */}
-        <a
-          onClick={scrollToTop}
-          className={`fixed end-5 bottom-10 flex bg-primary w-15 h-15 justify-center items-center rounded-full text-white z-50 transition delay-150 duration-500 ease-in-out hover:scale-120 hover:cursor-pointer ${
-            position < 200 && "scale-120"
-          }`}
-        >
-          <FontAwesomeIcon icon={faAngleUp} size="2xl" />
-        </a>
+        <div className="flex justify-end sticky bottom-5 me-5 z-50">
+            <a
+            onClick={scrollToTop}
+            className={`flex bg-primary w-15 h-15 justify-center items-center rounded-full text-white z-50 transition delay-150 duration-500 ease-in-out hover:scale-120 hover:cursor-pointer ${
+                position < 200 && "scale-0"
+            }`}
+            >
+                <FontAwesomeIcon icon={faAngleUp} size="2xl" />
+            </a>
+        </div>
       </div>
     </ThemeContext.Provider>
   );

@@ -11,62 +11,60 @@ const Form = () => {
       </p>
       <div>
         <form className="flex flex-col gap-4 mt-4">
-          {/* WORKING */}
-          <label /* Name */ class="floating-label border-0 ">
+          <label /* Name */ className="floating-label border-0 ">
             <input
               type="text"
               placeholder="Name*"
-              class="input input-lg border-0 border-b-2 border-gray-100 w-full"
+              className="input input-lg border-0 border-b-2 border-gray-100 w-full"
               required
             />
             <span className="bg-red-500">Name*</span>
           </label>
-          <label /* Email */ class="floating-label border-0 ">
+          <label /* Email */ className="floating-label border-0 ">
             <input
               type="email"
               placeholder="Email*"
-              class="input input-lg border-0 border-b-2 border-gray-100 w-full"
+              className="input input-lg border-0 border-b-2 border-gray-100 w-full"
               required
             />
             <span className="bg-red-500">Email*</span>
           </label>
-          <label /* Location */ class="floating-label border-0 ">
+          <label /* Location */ className="floating-label border-0 ">
             <input
               type="text"
               placeholder="Location*"
-              class="input input-lg border-0 border-b-2 border-gray-100 w-full"
+              className="input input-lg border-0 border-b-2 border-gray-100 w-full"
               required
             />
             <span className="bg-red-500">Location*</span>
           </label>
 
-          {/* WORKING */}
           <div className="flex">
-            <label /* Budget */ class="floating-label border-0 w-[35%]">
+            <label /* Budget */ className="floating-label border-0 w-[35%]">
               <input
                 type="text"
                 placeholder="Budget*"
-                class="input input-lg border-0 border-b-2 border-gray-100 "
+                className="input input-lg border-0 border-b-2 border-gray-100 "
                 required
               />
               <span className="bg-red-500">Budget*</span>
             </label>
-            <label /* Subject */ class="floating-label border-0 w-full ms-6">
+            <label /* Subject */ className="floating-label border-0 w-full ms-6">
               <input
                 type="text"
                 placeholder="Subject*"
-                class="input input-lg border-0 border-b-2 border-gray-100 w-full"
+                className="input input-lg border-0 border-b-2 border-gray-100 w-full"
                 required
               />
               <span className="bg-red-500">Subject*</span>
             </label>
           </div>
 
-          <label /* Message */ class="floating-label border-0 ">
+          <label /* Message */ className="floating-label border-0 ">
             <textarea
               type="text"
               placeholder="Message*"
-              class="input input-lg border-0 border-b-2 border-gray-100 w-full"
+              className="input input-lg border-0 border-b-2 border-gray-100 w-full"
               required
             />
             <span className="bg-red-500">Message*</span>

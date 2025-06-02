@@ -39,7 +39,6 @@ const Contact = () => {
               the majority have suffered alte.
             </p>
           </div>
-          {/* WORKING */}
           <div className="w-84 h-78 my-8.75">
             {contactData.map((item, index) => (
               <Address item={item} key={index} />

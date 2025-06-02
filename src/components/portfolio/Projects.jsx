@@ -12,12 +12,12 @@ const Projects = ({ data }) => {
           <p className="text-gray-400 text-xs font-medium">{data?.category}</p>
           <p className="text-gray-900 text-lg font-semibold">{data?.title}</p>
         </div>
-        <p className="text-gray-600 text-[14px] font-normal">
+        <p className="text-gray-600 text-[14px]">
           {data?.description}
         </p>
         <a
           href={data?.link}
-          className="btn border-[#A53DFF] text-[#A53DFF] bg-white text-[16px] font-semibold w-43.25 mt-5"
+          className="btn border-[#A53DFF] text-[#A53DFF] bg-white text-[16px] font-semibold w-43.25 h-[48px] mt-5"
         >
           Case Study
           <span className="ms-3">

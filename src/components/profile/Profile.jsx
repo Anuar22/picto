@@ -13,9 +13,7 @@ const Profile = () => {
 
   return (
     <div
-      className={`mt-56 rounded-2xl ${
-        dark ? "bg-gray-400" : "bg-gray-200"
-      } p-28`}
+      className={`mt-56 rounded-2xl bg-white drop-shadow-2xl shadow-white p-28`}
     >
       <div className="flex justify-between items-center">
         <img

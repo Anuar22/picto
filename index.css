@@ -22,15 +22,12 @@ body {
 .bg-primary {
   background-color: #a53dff;
 }
-.first-layer {
-  background: #ffffff;
-  background: linear-gradient(
-    25deg,
-    rgba(255, 255, 255, 0) 66%,
-    rgba(218, 77, 241, 0.39) 100%,
-    rgba(218, 77, 241, 0.3) 93%,
-    rgba(218, 77, 241, 0.26) 88%
-  );
+.background-layer {
+    background: 
+    radial-gradient(circle at 20% 105%,#FFE2B0F5 1% 10px, transparent 20%),
+    radial-gradient(circle at 95% -15%, #DA4DF166 5%, transparent 30%),
+    radial-gradient(circle at center right, #C4F5E9B2 10%, transparent 40%);
+      
 }
 .section-title {
   font-weight: 600;

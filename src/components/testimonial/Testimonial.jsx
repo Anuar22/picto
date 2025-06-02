@@ -12,13 +12,13 @@ const Testimonial = () => {
           </p>
         </div>
         <div className="text-center">
-          <p className="text-lg font-medium text-[#2B384C] mb-6">
+          <p className="text-lg font-medium text-[#2B384C]">
             “Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis
             felis turpis, nec semper odio convallis at. Curabitur imperdiet
             semper arcu, a finibus arcu suscipit in. Donec quis placerat nibh.
             Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
-            <p>Morbi ornare elit at libero suscipit porta.”</p>
           </p>
+            <p className="text-lg font-medium text-[#2B384C] mb-6">Morbi ornare elit at libero suscipit porta.”</p>
           <div className="w-67 h-14.5 mx-auto">
             <p className="text-lg font-medium">Esther Howard</p>
             <p className="text-[16px] font-light">
