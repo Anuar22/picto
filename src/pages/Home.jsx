@@ -1,4 +1,3 @@
-import React from "react";
 import Introduction from "../components/introduction/Introduction";
 import Profile from "../components/profile/Profile";
 import "../../index.css";
@@ -10,17 +9,16 @@ import Profession from "../components/profession/Profession";
 import HappyClients from "../components/happyClients/HappyClients";
 import Testimonial from "../components/testimonial/Testimonial";
 import Contact from "../components/contact/Contact";
-import { HashLoader } from "react-spinners";
 
 const Home = () => {
   return (
     <div className={`relative `}>
-        <div /* Gradient background */ className="background-layer">
-            <div className="content mx-auto -mb-28 z-10 relative">
-                <Introduction />
-                <Profile />
-            </div>
+      <div className="introduction-profile-background">
+        <div className="content mx-auto -mb-28 z-10 relative">
+          <Introduction />
+          <Profile />
         </div>
+      </div>
       <div className="bg-[#F0F1F3] h-249.5 center relative">
         <WorkProcess />
       </div>
@@ -30,7 +28,7 @@ const Home = () => {
       <div className="h-118 bg-gray-900">
         <WorkTogether />
       </div>
-      <div className="h-196 ">
+      <div className="h-196 blog-background">
         <Blog />
       </div>
       <div className="h-219 bg-[#F0F1F3]">
@@ -42,7 +40,7 @@ const Home = () => {
       <div className="h-133.5">
         <Testimonial />
       </div>
-      <div className="h-165 ">
+      <div className="h-165 relative z-10">
         <Contact />
       </div>
     </div>

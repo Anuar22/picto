@@ -44,7 +44,10 @@ const WorkProcess = () => {
   ];
 
   return (
-    <div className="content h-150 flex justify-between items-center">
+    <div
+      className="content h-150 flex justify-between items-center"
+      id="work-process"
+    >
       <div className="w-132.25">
         <p className="text-5xl font-semibold">Work Process</p>
         <p className="mt-6 mb-4 text-[18px] font-normal text-gray-500">

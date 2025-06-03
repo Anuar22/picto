@@ -66,7 +66,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className="content h-368 mt-25">
+    <div className="content h-368 mt-25" id="portfolio">
       <div className="h-293.5">
         <div className="h-32 mb-17.5">
           <div className="w-144.25 text-center mx-auto">

@@ -4,52 +4,44 @@ import { useNavigate } from "react-router-dom";
 import { ThemeContext } from "../../../layouts/Main";
 
 const NavBar = () => {
-    // COMMENT: Context for dark mode or light mode
-//   const [theme, setTheme] = useContext(ThemeContext);
+  // COMMENT: Context for dark mode or light mode
+  //   const [theme, setTheme] = useContext(ThemeContext);
 
-  const navigate = useNavigate();
   //   Menu list for the navbar
   const navItems = [
-    { id: 1, name: "Home", url: "Home" },
-    { id: 2, name: "About", url: "About" },
-    { id: 3, name: "Process", url: "Process" },
-    { id: 4, name: "Portfolio", url: "Portfolio" },
-    { id: 5, name: "Blog", url: "Blog" },
-    { id: 6, name: "Services", url: "Services" },
+    { id: 1, name: "Home", url: "" },
+    { id: 2, name: "About", url: "profile" },
+    { id: 3, name: "Process", url: "work-process" },
+    { id: 4, name: "Portfolio", url: "portfolio" },
+    { id: 5, name: "Blog", url: "blog" },
+    { id: 6, name: "Services", url: "services" },
   ];
 
-  //   Navigator function
-  const handleNavigate = (urlLink) => {
-    console.log(urlLink.toLowerCase());
-    urlLink?.includes(" ") ? (urlLink = urlLink.replaceAll(" ", "-")) : urlLink;
-    navigate(`/#${urlLink}`);
-  };
-
   //COMMENT:  Dark theme button function
-//   const swapTheme = (e) => {
-//     const themeValue = e.target?.checked;
-//     localStorage.setItem("dark", themeValue);
-//     themeValue ? setTheme("dark") : setTheme("light");
-//   };
+  //   const swapTheme = (e) => {
+  //     const themeValue = e.target?.checked;
+  //     localStorage.setItem("dark", themeValue);
+  //     themeValue ? setTheme("dark") : setTheme("light");
+  //   };
 
   const menu = navItems.map((item) => (
     <li key={item.id}>
       <a
         className="hover:text-purple-700 px-6 py-3"
-        onClick={() => handleNavigate(item.url?.toLowerCase())}
+        href={`#${item.url?.toLowerCase()}`}
       >
         {item.name}
       </a>
     </li>
   ));
 
-//   COMMENT: useEffect to set the theme based on localStorage
-//   useEffect(() => {
-//     const themeData = localStorage.getItem("dark");
-//     themeData == "true"
-//       ? (document.getElementsByClassName("theme-controller")[0].checked = true)
-//       : localStorage.setItem("dark", "false");
-//   }, [theme]);
+  //   COMMENT: useEffect to set the theme based on localStorage
+  //   useEffect(() => {
+  //     const themeData = localStorage.getItem("dark");
+  //     themeData == "true"
+  //       ? (document.getElementsByClassName("theme-controller")[0].checked = true)
+  //       : localStorage.setItem("dark", "false");
+  //   }, [theme]);
 
   return (
     <div className="w-full">
@@ -121,7 +113,9 @@ const NavBar = () => {
           </label> */}
           {/* Dark mode button end */}
 
-          <a className="btn btn-lg btn-primary">Contact</a>
+          <a className="btn btn-lg btn-primary" href="#contact">
+            Contact
+          </a>
         </div>
       </div>
     </div>

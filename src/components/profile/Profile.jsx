@@ -14,6 +14,7 @@ const Profile = () => {
   return (
     <div
       className={`mt-56 rounded-2xl bg-white drop-shadow-2xl shadow-white p-28`}
+      id="profile"
     >
       <div className="flex justify-between items-center">
         <img

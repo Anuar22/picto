@@ -27,7 +27,10 @@ const Contact = () => {
   ];
 
   return (
-    <div className="content h-180  center absolute z-10 start-[15.62%] p-22 bg-white rounded-2xl shadow-2xl ">
+    <div
+      className="content h-180  center z-10 p-22 bg-white rounded-2xl shadow-2xl"
+      id="contact"
+    >
       <div className="flex items-center justify-between w-full h-full">
         <div className="w-120.25 h-136">
           <div className="h-28.5">
@@ -51,7 +54,7 @@ const Contact = () => {
         <div className="w-140 h-123 overflow-y-scroll">
           <Form />
         </div>
-        <div className="absolute end-20 w-5 h-full bg-white" />
+        {/* <div className="absolute end-20 w-5 h-full bg-white" /> */}
       </div>
     </div>
   );

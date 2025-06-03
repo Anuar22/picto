@@ -32,7 +32,7 @@ const Main = () => {
     duration: 500,
     smooth: true,
   };
- 
+
   // Scroll to top function
   const scrollToTop = () => {
     animateScroll.scrollToTop(options); /* To go to top */
@@ -41,22 +41,21 @@ const Main = () => {
 
   return (
     <ThemeContext.Provider value={[theme, setTheme]}>
-      {/* <div data-theme={theme} className="xl:px-50 mx-auto max-w-[1920px]"> */}
       <div data-theme={theme} className="mx-auto max-w-[1920px] relative">
         <NavBar />
-        <Outlet/>
+        <Outlet />
         <Footer />
 
         {/* Scroll to top button */}
-        <div className="flex justify-end sticky bottom-5 me-5 z-50">
-            <a
+        <div className="flex justify-end relative me-10 z-10">
+          <a
             onClick={scrollToTop}
-            className={`flex bg-primary w-15 h-15 justify-center items-center rounded-full text-white z-50 transition delay-150 duration-500 ease-in-out hover:scale-120 hover:cursor-pointer ${
-                position < 200 && "scale-0"
+            className={`bg-primary fixed bottom-15 end-auto  w-15 h-15 flex justify-center items-center rounded-full text-white transition delay-150 duration-500 ease-in-out hover:scale-120 hover:cursor-pointer ${
+              position < 200 && "scale-0"
             }`}
-            >
-                <FontAwesomeIcon icon={faAngleUp} size="2xl" />
-            </a>
+          >
+            <FontAwesomeIcon icon={faAngleUp} size="2xl" />
+          </a>
         </div>
       </div>
     </ThemeContext.Provider>

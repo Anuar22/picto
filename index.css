@@ -19,25 +19,34 @@ body {
     width: 100%;
   }
 }
-.bg-primary {
-  background-color: #a53dff;
-}
-.background-layer {
-    background: 
-    radial-gradient(circle at 20% 105%,#FFE2B0F5 1% 10px, transparent 20%),
-    radial-gradient(circle at 95% -15%, #DA4DF166 5%, transparent 30%),
-    radial-gradient(circle at center right, #C4F5E9B2 10%, transparent 40%);
-      
-}
-.section-title {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 56px;
-  color: #132238;
-}
 
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.bg-primary {
+  background-color: #a53dff;
+}
+
+.introduction-profile-background {
+  background: radial-gradient(
+      circle at 15% 100%,
+      #ffe2b0f5 1% 10px,
+      transparent 20%
+    ),
+    radial-gradient(circle at 95% -15%, #da4df166 5%, transparent 30%),
+    radial-gradient(circle at center right, #c4f5e9b2 2%, transparent 35%);
+}
+.blog-background {
+  background: radial-gradient(circle at -10% 0%, #da4df166 1%, transparent 25%),
+    radial-gradient(circle at 110% 30%, #c4f5e9b2 5%, transparent 25%);
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  color: #132238;
 }

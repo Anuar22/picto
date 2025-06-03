@@ -38,7 +38,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className="content pt-25">
+    <div className="content pt-25" id="blog">
       <div className="h-138">
         <div className="w-145 h-33 text-center mx-auto mb-17.5">
           <p className="section-title">Blog</p>

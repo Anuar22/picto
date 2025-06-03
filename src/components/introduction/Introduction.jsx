@@ -4,7 +4,9 @@ import "./introduction.css";
 import InformationSummary from "./InformationSummary";
 import { ThemeContext } from "../../layouts/Main";
 const Introduction = () => {
-  const [theme] = useContext(ThemeContext);
+  const [theme] = useContext(ThemeContext); /* Theme context: dark/light */
+
+  // Information summary data
   const informationSummaryData = [
     {
       id: 1,
@@ -24,7 +26,7 @@ const Introduction = () => {
   ];
 
   return (
-    <div className="flex justify-between pt-[126px]">
+    <div className="flex justify-between pt-[126px]" id="introduction">
       <div className="w-full flex flex-col justify-between">
         <div className="pt-[52px] me-[126px]">
           <p className="text-7xl font-semibold">

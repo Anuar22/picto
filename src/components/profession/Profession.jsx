@@ -24,7 +24,10 @@ const Profession = () => {
   ];
 
   return (
-    <div className="content flex items-center justify-between h-full">
+    <div
+      className="content flex items-center justify-between h-full"
+      id="services"
+    >
       <div className="w-132.25 h-84.5 flex flex-col justify-between">
         <div className="w-full h-67">
           {/* NOTE: required height: 268px */}
