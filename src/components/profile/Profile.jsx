@@ -16,14 +16,22 @@ const Profile = () => {
       className={`mt-56 rounded-2xl bg-white drop-shadow-2xl shadow-white p-28`}
       id="profile"
     >
-      <div className="flex justify-between items-center">
-        <img
-          className="w-[424px] bg-[#F0F1F3] rounded-xl"
-          src={person}
-          alt=""
-        />
+      <div className="flex justify-between items-center ">
+        <div className="w-134 h-fit relative">
+          <div>
+            <img className=" bg-[#F0F1F3] rounded-xl" src={person} alt="" />
+          </div>
 
-        <div className="w-134">
+          <div className="w-[464px] absolute -bottom-9">
+            <div className="flex justify-center">
+              <div className="w-66 h-18 z-50 text-center bg-white rounded-[4px] center shadow-2xl drop-shadow-2xl shadow-white">
+                <SocialMedia />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-134 max-[1160px]:p-5">
           <h2
             className={`text-[38px] font-semibold mb-8 ${dark && "text-black"}`}
           >
@@ -57,13 +65,6 @@ const Profile = () => {
               <FontAwesomeIcon icon={faDownload} style={{ color: "#9929fb" }} />{" "}
               Download CV
             </a>
-          </div>
-        </div>
-      </div>
-      <div className="w-[424px]">
-        <div className="flex justify-center">
-          <div className="w-66 h-18 mt-[-36px] z-50 absolute text-center bg-white rounded-[4px] center">
-            <SocialMedia />
           </div>
         </div>
       </div>

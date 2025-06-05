@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../../assets/logo.png";
-import { useNavigate } from "react-router-dom";
 import { ThemeContext } from "../../../layouts/Main";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   // COMMENT: Context for dark mode or light mode
@@ -26,12 +26,14 @@ const NavBar = () => {
 
   const menu = navItems.map((item) => (
     <li key={item.id}>
-      <a
+      <Link
         className="hover:text-purple-700 px-6 py-3"
-        href={`#${item.url?.toLowerCase()}`}
+        to={item?.url?.toLowerCase()}
+        smooth={true}
+        duration={500}
       >
         {item.name}
-      </a>
+      </Link>
     </li>
   ));
 
@@ -113,9 +115,15 @@ const NavBar = () => {
           </label> */}
           {/* Dark mode button end */}
 
-          <a className="btn btn-lg btn-primary" href="#contact">
+          <Link
+            className="btn btn-lg btn-primary"
+            href="#contact"
+            to={`contact`}
+            smooth={true}
+            duration={900}
+          >
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </div>

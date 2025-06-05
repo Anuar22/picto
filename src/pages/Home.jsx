@@ -12,14 +12,14 @@ import Contact from "../components/contact/Contact";
 
 const Home = () => {
   return (
-    <div className={`relative `}>
+    <div className={`relative`}>
       <div className="introduction-profile-background">
         <div className="content mx-auto -mb-28 z-10 relative">
           <Introduction />
           <Profile />
         </div>
       </div>
-      <div className="bg-[#F0F1F3] h-249.5 center relative">
+      <div className="bg-[#F0/* /* F1F3] h-249.5 center relative">
         <WorkProcess />
       </div>
       <div className="h-368">

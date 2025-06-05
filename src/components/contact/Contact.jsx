@@ -6,6 +6,7 @@ import {
 import Address from "./Address";
 import Form from "./Form";
 import SocialMedia from "../common/socialMedia/SocialMedia";
+import { Element } from "react-scroll";
 
 const Contact = () => {
   const contactData = [

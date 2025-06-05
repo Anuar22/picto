@@ -26,10 +26,13 @@ const Introduction = () => {
   ];
 
   return (
-    <div className="flex justify-between pt-[126px]" id="introduction">
+    <div
+      className="flex justify-between pt-[126px] max-[1150px]:flex-col-reverse p-2"
+      id="introduction"
+    >
       <div className="w-full flex flex-col justify-between">
         <div className="pt-[52px] me-[126px]">
-          <p className="text-7xl font-semibold">
+          <p className="text-7xl font-semibold max-[1150px]:text-6xl text-nowrap">
             Hello, I’m <br />
             Brooklyn Gilbert
           </p>
@@ -39,23 +42,31 @@ const Introduction = () => {
             London, England. I strives to build immersive and beautiful web
             applications through carefully crafted code and user-centric design.
           </p>
-          <a className="btn-primary btn w-32 h-12 text-white mt-6" href="#">
+          <a
+            className="btn-primary btn w-32 h-12 text-white max-[1160px]:m-6"
+            href="#"
+          >
             Say Hello!
           </a>
         </div>
-        <div className="flex z-0">
+        <div className="flex z-0 max-[1150px]:hidden">
           {informationSummaryData.map((item) => (
             <InformationSummary key={item.id} item={item} />
           ))}
         </div>
       </div>
       <img
-        className={`h-[636px] w-[536px] shadow-2xl shadow-gray-200 ${
+        className={`shadow-2xl shadow-gray-200 max-[1150px]:w-1/2 ${
           theme == "dark" ? "bg-gray-300" : "bg-white "
         } rounded-3xl`}
         src={person}
         alt="person"
       />
+      <div className="flex flex-col z-10 top-[126px] end-10 absolute min-[1150px]:hidden">
+        {informationSummaryData.map((item) => (
+          <InformationSummary key={item.id} item={item} />
+        ))}
+      </div>
     </div>
   );
 };
