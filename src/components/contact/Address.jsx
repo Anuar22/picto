@@ -6,7 +6,8 @@ const Address = ({ item }) => {
 
   return (
     <div
-      className="p-6 flex h-24 my-3 rounded-[10px] bg-white hover:shadow-xl hover:scale-[1.06] duration-150  cursor-pointer overflow-hidden"
+      className="p-6 flex h-24 my-3 rounded-[10px] bg-white  hover:scale-[1] duration-450  cursor-pointer hover:shadow-[0px_0px_37px_5px_rgba(0,_0,_0,_0.1)] shadow-gray-200"
+      /* Scale effect:  */
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >

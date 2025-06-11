@@ -13,16 +13,15 @@ const Profile = () => {
 
   return (
     <div
-      className={`mt-56 rounded-2xl bg-white drop-shadow-2xl shadow-white p-28`}
+      className={`relative -bottom-28 z-10 rounded-2xl bg-white drop-shadow-2xl shadow-white p-28`}
       id="profile"
     >
-      <div className="flex justify-between items-center ">
+      <div className="flex justify-between items-center">
         <div className="w-134 h-fit relative">
-          <div>
-            <img className=" bg-[#F0F1F3] rounded-xl" src={person} alt="" />
-          </div>
-
-          <div className="w-[464px] absolute -bottom-9">
+            <img className="bg-[#F0F1F3] rounded-xl" src={person} alt="" />
+            
+            {/* Social media section */}
+            <div className="w-[464px] h-9 relative bottom-9">
             <div className="flex justify-center">
               <div className="w-66 h-18 z-50 text-center bg-white rounded-[4px] center shadow-2xl drop-shadow-2xl shadow-white">
                 <SocialMedia />

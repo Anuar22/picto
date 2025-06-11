@@ -27,7 +27,7 @@ const Introduction = () => {
 
   return (
     <div
-      className="flex justify-between pt-[126px] max-[1150px]:flex-col-reverse p-2"
+      className="flex justify-between pt-[126px] mb-27.5 max-[1150px]:flex-col-reverse p-2"
       id="introduction"
     >
       <div className="w-full flex flex-col justify-between">
@@ -36,7 +36,7 @@ const Introduction = () => {
             Hello, I’m <br />
             Brooklyn Gilbert
           </p>
-          <p className="text-[18px]">
+          <p className="text-[18px] my-6">
             I'm a Freelance <span className="bg-highlight">UI/UX Designer</span>{" "}
             and <span className="bg-highlight"> Developer</span> based in
             London, England. I strives to build immersive and beautiful web

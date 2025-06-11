@@ -77,7 +77,7 @@ const Portfolio = () => {
             </p>
           </div>
         </div>
-        <div className="h-244">
+        <div className="">
           <div className="flex flex-wrap justify-between gap-6 mx-auto">
             {projectData.map((data, index) => (
               <Projects data={data} key={index} />

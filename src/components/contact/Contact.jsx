@@ -29,7 +29,7 @@ const Contact = () => {
 
   return (
     <div
-      className="content h-180  center z-10 p-22 bg-white rounded-2xl shadow-2xl"
+      className="content h-180  center z-10 p-22 bg-white rounded-2xl shadow-[0px_0px_90px_9px_rgba(0,_0,_0,_0.1)]"
       id="contact"
     >
       <div className="flex items-center justify-between w-full h-full">

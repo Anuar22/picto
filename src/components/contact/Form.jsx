@@ -4,8 +4,8 @@ import React from "react";
 
 const Form = () => {
   return (
-    <div className="">
-      <p className="text-lg font-normal text-[#87909D] mt-12.5">
+    <div className="mx-2">
+      <p className="text-lg font-normal text-[#87909D] ">
         There are many variations of passages of Lorem Ipsu available, but the
         majority have suffered alte.
       </p>
@@ -18,7 +18,7 @@ const Form = () => {
               className="input input-lg border-0 border-b-2 border-gray-100 w-full"
               required
             />
-            <span className="bg-red-500">Name*</span>
+            <span>Name*</span>
           </label>
           <label /* Email */ className="floating-label border-0 ">
             <input
@@ -27,7 +27,7 @@ const Form = () => {
               className="input input-lg border-0 border-b-2 border-gray-100 w-full"
               required
             />
-            <span className="bg-red-500">Email*</span>
+            <span>Email*</span>
           </label>
           <label /* Location */ className="floating-label border-0 ">
             <input
@@ -36,7 +36,7 @@ const Form = () => {
               className="input input-lg border-0 border-b-2 border-gray-100 w-full"
               required
             />
-            <span className="bg-red-500">Location*</span>
+            <span>Location*</span>
           </label>
 
           <div className="flex">
@@ -47,7 +47,7 @@ const Form = () => {
                 className="input input-lg border-0 border-b-2 border-gray-100 "
                 required
               />
-              <span className="bg-red-500">Budget*</span>
+              <span>Budget*</span>
             </label>
             <label /* Subject */ className="floating-label border-0 w-full ms-6">
               <input
@@ -56,22 +56,22 @@ const Form = () => {
                 className="input input-lg border-0 border-b-2 border-gray-100 w-full"
                 required
               />
-              <span className="bg-red-500">Subject*</span>
+              <span>Subject*</span>
             </label>
           </div>
 
           <label /* Message */ className="floating-label border-0 ">
-            <textarea
+            <input
               type="text"
               placeholder="Message*"
               className="input input-lg border-0 border-b-2 border-gray-100 w-full"
               required
             />
-            <span className="bg-red-500">Message*</span>
+            <span>Message*</span>
           </label>
           <button
             type="submit"
-            className="btn btn-primary text-[16px] font-semibold w-35.25 h-12 rounded-sm"
+            className="btn btn-primary text-[16px] font-semibold w-35.25 h-12 rounded-sm mt-12.5"
           >
             Submit <FontAwesomeIcon icon={faPaperPlane} size="xl" />
           </button>
