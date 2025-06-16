@@ -115,7 +115,7 @@ const NavBar = () => {
           </label> */}
           {/* Dark mode button end */}
 
-          <Link
+          <p className="hidden sm:block"><Link
             className="btn btn-lg btn-primary"
             href="#contact"
             to={`contact`}
@@ -123,7 +123,7 @@ const NavBar = () => {
             duration={900}
           >
             Contact
-          </Link>
+          </Link></p>
         </div>
       </div>
     </div>

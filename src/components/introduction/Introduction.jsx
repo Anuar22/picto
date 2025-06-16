@@ -31,8 +31,8 @@ const Introduction = () => {
       id="introduction"
     >
       <div className="w-full flex flex-col justify-between">
-        <div className="pt-[52px] me-[126px]">
-          <p className="text-7xl font-semibold max-[1150px]:text-6xl text-nowrap">
+        <div className="pt-[52px] me-[126px] w-full sm:w-auto">
+          <p className="text-7xl max-sm:text-5xl font-semibold max-[1150px]:text-6xl">
             Hello, I’m <br />
             Brooklyn Gilbert
           </p>
@@ -42,12 +42,14 @@ const Introduction = () => {
             London, England. I strives to build immersive and beautiful web
             applications through carefully crafted code and user-centric design.
           </p>
+          <p className="text-center sm:text-start">
           <a
-            className="btn-primary btn w-32 h-12 text-white max-[1160px]:m-6"
-            href="#"
+            className="btn-primary btn w-32 h-12 text-white"
+            href="mailto:example@gmail.com"
           >
             Say Hello!
           </a>
+          </p>
         </div>
         <div className="flex z-0 max-[1150px]:hidden">
           {informationSummaryData.map((item) => (
@@ -56,13 +58,13 @@ const Introduction = () => {
         </div>
       </div>
       <img
-        className={`shadow-2xl shadow-gray-200 max-[1150px]:w-1/2 ${
+        className={`shadow-2xl shadow-gray-200 h-auto max-[1150px]:w-1/2 ${
           theme == "dark" ? "bg-gray-300" : "bg-white "
         } rounded-3xl`}
         src={person}
         alt="person"
       />
-      <div className="flex flex-col z-10 top-[126px] end-10 absolute min-[1150px]:hidden">
+      <div className="flex flex-col z-10 top-[126px] end-0 absolute min-[1150px]:hidden">
         {informationSummaryData.map((item) => (
           <InformationSummary key={item.id} item={item} />
         ))}
