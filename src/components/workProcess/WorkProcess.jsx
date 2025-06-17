@@ -45,7 +45,7 @@ const WorkProcess = () => {
 
   return (
     <div
-      className="content h-150 flex justify-between items-center"
+      className="content h-150 flex max-md:flex-col justify-between items-center max-md:bg-red-500"
       id="work-process"
     >
       <div className="w-132.25">
@@ -60,7 +60,8 @@ const WorkProcess = () => {
           arcu, varius eget velit non.
         </p>
       </div>
-      <div className="flex flex-wrap w-162 justify-end">
+
+      <div className="flex flex-wrap w-162 bg-red-500 max-xl:w-fit justify-end">
         {workStepData.map((data, index) => {
           return (
             <WorkSteps

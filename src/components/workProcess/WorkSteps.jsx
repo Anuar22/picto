@@ -1,11 +1,16 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
-const WorkSteps = ({ data, style }) => {
-  // console.log(data);
+const heightWidth = (w) => {
+  const ratio = { w: 26, h: 23 };
+  return `w-${w * ratio?.w} h-${w * ratio?.h}`;
+};
 
+const WorkSteps = ({ data, style }) => {
   return (
-    <div className={`w-78 h-69 p-8 bg-white rounded-xl ${style && style}`}>
+    <div
+      className={`${heightWidth(3)} p-8 bg-white rounded-xl ${style && style}`}
+    >
       <div
         className={`w-18 h-18 ${data?.background} text-center center rounded-md`}
       >

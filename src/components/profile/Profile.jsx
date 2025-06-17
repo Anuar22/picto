@@ -13,15 +13,19 @@ const Profile = () => {
 
   return (
     <div
-      className={`relative xl:-bottom-28 z-10 rounded-2xl bg-white drop-shadow-2xl shadow-white xl:p-28 `}
+      className={`relative xl:-bottom-28 z-10 rounded-2xl bg-white drop-shadow-2xl shadow-white xl:p-28`}
       id="profile"
     >
-      <div className="flex max-sm:flex-col justify-between items-center">
-        <div className="max-sm:w-full w-134 h-fit relative">
-            <img className="bg-[#F0F1F3] rounded-xl" src={person} alt="" />
-            
-            {/* Social media section */}
-            <div className="max-sm:w-full w-[464px] h-9 relative bottom-9">
+      <div className="flex max-md:flex-col justify-between items-center">
+        <div className="max-sm:w-full w-134 max-md:w-auto h-fit relative">
+          <img
+            className="bg-[#F0F1F3] max-sm:w-full max-md:w- rounded-xl"
+            src={person}
+            alt=""
+          />
+
+          {/* Social media section */}
+          <div className="max-sm:w-[464px] max-md:w-auto h-9 relative bottom-9">
             <div className="flex justify-center">
               <div className="w-66 h-18 z-50 text-center bg-white rounded-[4px] center shadow-2xl drop-shadow-2xl shadow-white">
                 <SocialMedia />
@@ -32,7 +36,9 @@ const Profile = () => {
 
         <div className="max-sm:w-full w-134 max-[1160px]:p-5">
           <h2
-            className={`text-[38px] max-sm:text-[30px]  font-semibold mb-8 ${dark && "text-black"}`}
+            className={`text-[38px] max-sm:text-[30px] font-semibold mb-8 ${
+              dark && "text-black"
+            }`}
           >
             I am Professional User Experience Designer
           </h2>
@@ -51,7 +57,7 @@ const Profile = () => {
               stylish, modern websites, web services.
             </p>
           </div>
-          <div className="mt-8 flex">
+          <div className="mt-8 flex max-sm:justify-center">
             <a className="btn btn-primary w-33 h-12 text-[16px]" href="#">
               My Projects
             </a>
