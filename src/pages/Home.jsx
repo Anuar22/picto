@@ -16,11 +16,11 @@ const Home = () => {
       {/* NOTE: remove margin top before production */}
       <div className="introduction-profile-background">
         <div className="content">
-          {/* <Introduction /> */}
-          {/* <Profile /> */}
+          <Introduction />
+          <Profile />
         </div>
       </div>
-      <div className="bg-[#F0F1F3] h-249.5 pt-62">
+      <div className="bg-[#F0F1F3] min-xl:h-249.5 min-xl:pt-62">
         <WorkProcess />
       </div>
       <div className="h-368">

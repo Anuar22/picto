@@ -46,10 +46,10 @@ const WorkProcess = () => {
 
   return (
     <div
-      className="content min-lg:h-150 h-200 flex max-[1184px]:flex-col justify-between items-center bg-red-200"
+      className="content min-lg:h-150 lg:max-[1184px]:h-200 max-lg:mt-10 max-lg:pt-5 flex max-[1184px]:flex-col justify-between items-center "
       id="work-process"
     >
-      <div className="min-[1184px]:w-132.25 max-xl:px-10 max-[1184px]:text-center bg-green-200">
+      <div className="min-[1184px]:w-132.25 max-xl:px-10 max-[1184px]:text-center">
         <p className="min-md:text-5xl text-2xl font-semibold">Work Process</p>
         <p className="mt-6 mb-4 min-md:text-[18px] text-sm font-normal text-gray-500">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus
@@ -62,7 +62,7 @@ const WorkProcess = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 min-sm:w-162 max-sm:w-auto min-lg:w-fit justify-end  bg-yellow-200">
+      <div className="grid grid-cols-2 min-sm:w-162 max-sm:w-auto min-lg:w-fit justify-end">
         {workStepData.map((data, index) => {
           return (
             <WorkSteps

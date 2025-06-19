@@ -2,9 +2,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const WorkSteps = ({ data, style }) => {
+  /* w-52 h-46 */
   return (
     <div
-      className={`w-65 h-57.5 min-sm:w-78 min-sm:h-69 p-4 min-sm:p-8 bg-white rounded-xl ${
+      className={`w-52 h-46 min-xs:w-65 min-xs:h-57.5 min-sm:w-78 min-sm:h-69 p-4 min-sm:p-8 bg-white rounded-xl ${
         style && style
       }`}
     >
@@ -21,9 +22,9 @@ const WorkSteps = ({ data, style }) => {
           />
         </p>
       </div>
-      <div className="mt-8 min-sm:mt-8">
+      <div className="mt-3 min-xs:mt-8 min-sm:mt-8">
         <p className="font-semibold min-sm:text-xl">{`${data?.id} ${data?.title}`}</p>
-        <p className="mt-3 text-[13px] min-sm:text-[16px] ">
+        <p className="mt-3 text-[13px] min-sm:text-[16px]">
           {data?.description}
         </p>
       </div>
