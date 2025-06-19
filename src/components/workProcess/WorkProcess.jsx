@@ -7,6 +7,7 @@ import {
   faHardDrive,
   faPenToSquare,
 } from "@fortawesome/free-solid-svg-icons";
+
 const WorkProcess = () => {
   const workStepData = [
     {
@@ -45,28 +46,28 @@ const WorkProcess = () => {
 
   return (
     <div
-      className="content min-lg:h-150 h-200 flex max-lg:flex-col justify-between items-center bg-red-500"
+      className="content min-lg:h-150 h-200 flex max-[1184px]:flex-col justify-between items-center bg-red-200"
       id="work-process"
     >
-      <div className="min-lg:w-132.25 max-lg:px-10 text-center">
+      <div className="min-[1184px]:w-132.25 max-xl:px-10 max-[1184px]:text-center bg-green-200">
         <p className="min-md:text-5xl text-2xl font-semibold">Work Process</p>
-        <p className="mt-6 mb-4 text-[18px] font-normal text-gray-500">
+        <p className="mt-6 mb-4 min-md:text-[18px] text-sm font-normal text-gray-500">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus
           arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices
           eget lorem ac vestibulum. Suspendis imperdiet,
         </p>
-        <p className="mt-6 text-[18px] font-normal text-gray-500">
+        <p className="mt-6 min-md:text-[18px] text-sm font-normal text-gray-500">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus
           arcu, varius eget velit non.
         </p>
       </div>
 
-      <div className="flex flex-wrap w-162 min-lg:w-fit justify-end">
+      <div className="grid grid-cols-2 min-sm:w-162 max-sm:w-auto min-lg:w-fit justify-end  bg-yellow-200">
         {workStepData.map((data, index) => {
           return (
             <WorkSteps
               data={data}
-              style={`${index % 2 == 1 ? "ms-6 mt-6" : "mb-6"}`}
+              style={`${index % 2 == 1 ? "ms-3 mt-6" : "mb-6"}`}
               key={index}
             />
           );
