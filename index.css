@@ -52,10 +52,18 @@ body {
   background: radial-gradient(circle at -10% 0%, #da4df166 1%, transparent 25%),
     radial-gradient(circle at 110% 30%, #c4f5e9b2 5%, transparent 25%);
 }
-
 .section-title {
   font-weight: 600;
   font-size: 48px;
   line-height: 56px;
   color: #132238;
+}
+
+@media (width<640px) {
+  .section-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    color: #132238;
+  }
 }

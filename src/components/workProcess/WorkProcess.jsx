@@ -46,7 +46,7 @@ const WorkProcess = () => {
 
   return (
     <div
-      className="content min-lg:h-150 lg:max-[1184px]:h-200 max-lg:mt-10 max-lg:pt-5 flex max-[1184px]:flex-col justify-between items-center "
+      className="content min-lg:h-150 lg:max-xl:h-220 max-lg:mt-10 max-lg:pt-5 flex max-[1184px]:flex-col justify-between items-center max-xl:pt-10 max-xl:justify-center max-xl:gap-5"
       id="work-process"
     >
       <div className="min-[1184px]:w-132.25 max-xl:px-10 max-[1184px]:text-center">

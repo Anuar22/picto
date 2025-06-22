@@ -66,19 +66,20 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className="content h-368 mt-25" id="portfolio">
-      <div className="h-293.5">
+    <div /* h-368 */ className="content mt-25 my-5" id="portfolio">
+      <div /* h-293.5 */ className="">
         <div className="h-32 mb-17.5">
-          <div className="w-144.25 text-center mx-auto">
-            <p className="section-title">Portfolio</p>
-            <p className="font-normal text-[18px] pt-6 text-gray-400">
+          <div className="min-sm:w-144.25 max-sm:px-2 text-center mx-auto">
+            <p className="section-title max-sm:text-xl">Portfolio</p>
+            <p className="font-normal text-[18px] max-sm:text-[14px] pt-6 text-gray-400">
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration.
             </p>
           </div>
         </div>
-        <div className="">
-          <div className="flex flex-wrap justify-between gap-6 mx-auto">
+        <div className="mx-auto flex justify-center">
+          <div className="grid min-xl:grid-cols-3 min-[868px]:grid-cols-2 max-[868px]:grid-cols-1 gap-4 overflow-hidden">
+            {/* flex flex-wrap justify-between gap-6 mx-auto */}
             {projectData.map((data, index) => (
               <Projects data={data} key={index} />
             ))}
