@@ -29,12 +29,12 @@ const Contact = () => {
 
   return (
     <div
-      className="content h-180  center z-10 p-22 bg-white rounded-2xl shadow-[0px_0px_90px_9px_rgba(0,_0,_0,_0.1)]"
+      className="content min-lg:h-180 center z-10 p-10 min-lg:p-22 bg-white rounded-2xl shadow-[0px_0px_90px_9px_rgba(0,_0,_0,_0.1)]"
       id="contact"
     >
-      <div className="flex items-center justify-between w-full h-full">
-        <div className="w-120.25 h-136">
-          <div className="h-28.5">
+      <div className="flex flex-col-reverse min-lg:flex-row items-center justify-between w-full h-full">
+        <div className="w-full min-lg:w-120.25 min-lg:h-136">
+          <div className="min-xl:h-28.5 max-lg:hidden">
             <p className="text-[38px] font-semibold text-[#132238]">
               Let’s discuss your Project
             </p>
@@ -43,16 +43,20 @@ const Contact = () => {
               the majority have suffered alte.
             </p>
           </div>
-          <div className="w-84 h-78 my-8.75">
+          <div className="w-full min-lg:w-84 min-lg:h-78 my-8.75 md:max-lg:flex justify-between">
             {contactData.map((item, index) => (
               <Address item={item} key={index} />
             ))}
           </div>
-          <div className="w-72 h-12">
+          <div className="w-full min-md:w-72 h-12 max-lg:text-center">
             <SocialMedia />
           </div>
         </div>
-        <div className="w-140 h-123 overflow-y-scroll">
+        <div className="w-full min-lg:w-140 min-lg:h-123 overflow-y-scroll">
+          <p className="text-[38px] font-semibold text-[#132238] min-lg:hidden text-center section-title">
+            Let’s discuss your Project
+          </p>
+
           <Form />
         </div>
         {/* <div className="absolute end-20 w-5 h-full bg-white" /> */}

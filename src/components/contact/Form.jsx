@@ -4,12 +4,12 @@ import React from "react";
 
 const Form = () => {
   return (
-    <div className="mx-2">
-      <p className="text-lg font-normal text-[#87909D] ">
+    <div className="">
+      <p className="text-[14px] min-sm:text-lg font-normal text-[#87909D]">
         There are many variations of passages of Lorem Ipsu available, but the
         majority have suffered alte.
       </p>
-      <div>
+      <div className="mx-2">
         <form className="flex flex-col gap-4 mt-4">
           <label /* Name */ className="floating-label border-0 ">
             <input
@@ -49,7 +49,9 @@ const Form = () => {
               />
               <span>Budget*</span>
             </label>
-            <label /* Subject */ className="floating-label border-0 w-full ms-6">
+            <label
+              /* Subject */ className="floating-label border-0 w-full ms-6"
+            >
               <input
                 type="text"
                 placeholder="Subject*"
@@ -71,7 +73,7 @@ const Form = () => {
           </label>
           <button
             type="submit"
-            className="btn btn-primary text-[16px] font-semibold w-35.25 h-12 rounded-sm mt-12.5"
+            className="btn btn-primary text-[16px] font-semibold w-35.25 h-12 rounded-sm mt-5 max-sm:12.5 min-[1032px]:mt-12.5 max-lg:mx-auto"
           >
             Submit <FontAwesomeIcon icon={faPaperPlane} size="xl" />
           </button>

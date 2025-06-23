@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 
 const Roles = ({ role }) => {
   const [mouseHover, setMouseHover] = React.useState(false);
+  //   BUG: Remove React.useState
   useEffect(() => {
     window.addEventListener("mouseenter", (e) => {
       console.log("Mouse entered on the: ", e.target);
@@ -21,10 +22,10 @@ const Roles = ({ role }) => {
         }`}
       />
       <div>
-        <p className="text-2xl font-semibold text-gray-900 pb-4">
+        <p className="text-xl min-sm:text-2xl font-semibold text-gray-900 pb-4">
           {role?.title}
         </p>
-        <p className="text-[16px] font-normal text-gray-700">
+        <p className="text-[13px] min-sm:text-[16px] font-normal text-gray-700">
           {role?.description}
         </p>
       </div>

@@ -32,7 +32,7 @@ const Home = () => {
       <div className="h-196 blog-background">
         <Blog />
       </div>
-      <div className="h-219 bg-[#F0F1F3]">
+      <div className="min-md:h-219 bg-[#F0F1F3]">
         <Profession />
       </div>
       <div className="h-138">
@@ -41,7 +41,7 @@ const Home = () => {
       <div className="h-133.5">
         <Testimonial />
       </div>
-      <div className="h-165 relative z-10">
+      <div className="min-lg:h-165 relative z-10">
         <Contact />
       </div>
     </div>

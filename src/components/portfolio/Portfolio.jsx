@@ -78,7 +78,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="mx-auto flex justify-center">
-          <div className="grid min-xl:grid-cols-3 min-[868px]:grid-cols-2 max-[868px]:grid-cols-1 gap-4 overflow-hidden">
+          <div className="grid min-xl:grid-cols-3 min-[868px]:grid-cols-2 max-[868px]:grid-cols-1 gap-4">
             {/* flex flex-wrap justify-between gap-6 mx-auto */}
             {projectData.map((data, index) => (
               <Projects data={data} key={index} />

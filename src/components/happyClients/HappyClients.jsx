@@ -140,24 +140,24 @@ const HappyClients = () => {
   ];
   return (
     <div className="content py-25 flex flex-col items-center">
-      <div className="w-144.25 text-center">
+      <div className="min-sm:w-144.25 text-center">
         <p className="section-title mb-6">Happy Clients</p>
-        <p className="text-lg text-[#87909D] font-normal">
+        <p className="text-lg text-[#87909D] font-normal max-sm:text-[14px]">
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration.
         </p>
       </div>
-      <div className="h-50 mt-6 w-full">
-        <Marquee pauseOnHover={true} speed={100}>
-          <p className=" h-50 flex items-center">
-            {brandLogos.map((logo, index) => (
-              <span className="ps-20" key={index}>
-                {logo}
-              </span>
-            ))}
-          </p>
-        </Marquee>
-      </div>
+      {/* <div className="h-20 min-sm:h-50 min-sm:mt-6 w-full bg-green-200"> */}
+      <Marquee pauseOnHover={true} speed={100}>
+        <p className="h-30 min-sm:h-50 flex items-center">
+          {brandLogos.map((logo, index) => (
+            <span className="ps-15 min-sm:ps-20" key={index}>
+              {logo}
+            </span>
+          ))}
+        </p>
+      </Marquee>
+      {/* </div> */}
     </div>
   );
 };
