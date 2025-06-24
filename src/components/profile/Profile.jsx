@@ -17,10 +17,9 @@ const Profile = () => {
       id="profile"
     >
       <div className="flex max-md:flex-col justify-between items-center">
-        {/* WORKING: STARTED */}
         <div className="W-106 h-126 rounded-2xl">
           {/* max-sm:w-full w-134 max-md:w-auto h-fit relative */}
-          <div className="w-106 h-117 object-fill overflow-hidden rounded-xl">
+          <div className="min-[440px]:w-106 h-117 object-fill overflow-hidden rounded-xl">
             <img
               className="bg-[#F0F1F3] h-[120%] object-cover "
               // bg-[#F0F1F3] max-sm:w-full max-md:w- rounded-xl
@@ -38,9 +37,7 @@ const Profile = () => {
           </div>
         </div>
 
-        {/* WORKING: ENDED */}
-
-        <div className="max-sm:w-full w-134 max-[1160px]:p-5">
+        <div className="max-sm:w-full w-134 min-[1160px]:p-5">
           <h2
             className={`text-[38px] max-sm:text-[30px] font-semibold mb-8 ${
               dark && "text-black"

@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
 
   //   COMMENT: server object is used for testing responsive design on different devices
-  /* server: {
+  server: {
     open: true,
     host: true, // Allow access from network devices
     proxy: {
@@ -17,5 +17,5 @@ export default defineConfig({
         secure: true,
       },
     },
-  }, */
+  },
 });

@@ -1,34 +1,55 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { EffectFade, Navigation, Pagination } from "swiper/modules";
+import TestimonialTemplate from "./TestimonialTemplate";
+import "./testimonial.css";
 
 const Testimonial = () => {
+  const testimonialData = [
+    {
+      message:
+        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.",
+      quote: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis nostrum eos distinctio ad eligendi asperiores doloribus expedita! Officia blanditiis unde numquam quam vitae, quaerat ab? Deleniti nihil molestias illum sequi inventore quidem quo, eligendi nam adipisci ratione quibusdam sit odio earum! Ea eius officia mollitia, possimus ex laborum ipsa soluta.`,
+      name: "Esther Howard",
+      designation: "Managing Director, ABC company",
+    },
+    {
+      message:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, unde?",
+      quote: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt unde alias magnam delectus laudantium voluptatem iure nemo error, esse a atque rerum suscipit facere cumque minima officiis praesentium dicta nulla reprehenderit dolorum soluta vitae ut tenetur autem? Ab pariatur nobis numquam sequi. Pariatur illum vel eum quasi minus dolores quam?`,
+      name: "Ali Haider",
+      designation: "COO, XYZ company",
+    },
+    {
+      message:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, debitis!",
+      quote: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestiae consectetur odit molestias blanditiis ipsum quos numquam beatae unde voluptas perferendis cupiditate recusandae, cumque accusamus vel veniam corrupti. Fugiat libero perspiciatis incidunt quae et? Temporibus molestiae, dolorum ad, tempore velit dolores numquam dolorem, voluptate tenetur similique labore aliquid? Eaque, repellendus?`,
+      name: "Elon Max",
+      designation: "Managing Director, KFC company",
+    },
+  ];
   return (
     <div className="content flex justify-center">
-      <div className="min-sm:w-218 h-94">
-        <div className="min-sm:w-144.25 h-32 text-center mx-auto mb-4 min-sm:mb-14">
-          <p className="section-title mb-6">Testimonial</p>
-          <p className="text-[14px] min-sm:text-lg font-normal text-[#87909D]">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration.
-          </p>
-        </div>
-        <div className="text-center">
-          <p className="text-[14px] min-sm:text-lg font-medium text-[#2B384C] mb-6">
-            “Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis
-            felis turpis, nec semper odio convallis at. Curabitur imperdiet
-            semper arcu, a finibus arcu suscipit in. Donec quis placerat nibh.
-            Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
-            Morbi ornare elit at libero suscipit porta.”
-          </p>
-          {/* <p className="text-lg font-medium text-[#2B384C] mb-6">
-            
-          </p> */}
-          <div className="w-67 h-14.5 mx-auto">
-            <p className="text-lg font-medium">Esther Howard</p>
-            <p className="text-[16px] font-light">
-              Managing Director, ABC company
-            </p>
-          </div>
-        </div>
+      <div className="w-full h-full min-lg:w-218 h_94">
+        <Swiper
+          spaceBetween={30}
+          effect={"fade"}
+          navigation={true}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[EffectFade, Navigation, Pagination]}
+        >
+          {testimonialData.map((testimonnial, index) => (
+            <SwiperSlide key={index}>
+              <TestimonialTemplate testimonial={testimonnial} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   );

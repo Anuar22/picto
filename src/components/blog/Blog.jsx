@@ -18,6 +18,7 @@ const Blog = () => {
       date: "22 Oct, 2020",
       comments: 246,
       title: "Lorem ipsum dolor sit consea. Nulla purus arcu",
+      link: "#",
     },
     {
       id: 2,
@@ -25,6 +26,7 @@ const Blog = () => {
       date: "22 Oct, 2020",
       comments: 246,
       title: "Lorem ipsum dolor sit consea. Nulla purus arcu",
+      link: "#",
     },
     {
       id: 3,
@@ -32,6 +34,7 @@ const Blog = () => {
       date: "22 Oct, 2020",
       comments: 246,
       title: "Lorem ipsum dolor sit consea. Nulla purus arcu",
+      link: "#",
     },
     {
       id: 4,
@@ -39,6 +42,7 @@ const Blog = () => {
       date: "22 Oct, 2020",
       comments: 246,
       title: "Lorem ipsum dolor sit consea. Nulla purus arcu",
+      link: "#",
     },
     {
       id: 5,
@@ -46,6 +50,7 @@ const Blog = () => {
       date: "22 Oct, 2020",
       comments: 246,
       title: "Lorem ipsum dolor sit consea. Nulla purus arcu",
+      link: "#",
     },
     {
       id: 6,
@@ -53,6 +58,7 @@ const Blog = () => {
       date: "22 Oct, 2020",
       comments: 246,
       title: "Lorem ipsum dolor sit consea. Nulla purus arcu",
+      link: "#",
     },
   ];
 
@@ -78,7 +84,7 @@ const Blog = () => {
         >
           <div className="h-87.5 gap-6">
             {blogData.map((data, index) => (
-              <SwiperSlide>
+              <SwiperSlide key={index}>
                 <MonoBlog data={data} key={index} />
               </SwiperSlide>
             ))}

@@ -1,0 +1,15 @@
+.swiper-slide {
+  background-color: white;
+}
+.swiper-fade .swiper-pagination {
+  position: relative;
+  /* margin-top: 10px; */
+}
+.swiper-fade .swiper-button-prev,
+.swiper-button-next {
+  visibility: hidden;
+}
+/* .swiper-wrapper {
+  background-color: white;
+  overflow: hidden;
+} */

@@ -5,7 +5,7 @@ const WorkSteps = ({ data, style }) => {
   /* w-52 h-46 */
   return (
     <div
-      className={`w-52 h-46 min-xs:w-65 min-xs:h-57.5 min-sm:w-78 min-sm:h-69 p-4 min-sm:p-8 bg-white rounded-xl ${
+      className={`min-[440px]:w-52 min-[440px]:h-46 min-xs:w-65 min-xs:h-57.5 min-sm:w-78 min-sm:h-69 p-4 min-sm:p-8 bg-white rounded-xl ${
         style && style
       }`}
     >
