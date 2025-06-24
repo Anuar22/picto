@@ -12,8 +12,7 @@ import Contact from "../components/contact/Contact";
 
 const Home = () => {
   return (
-    <div className={`relative mt-20`}>
-      {/* NOTE: remove margin top before production */}
+    <div className={`relative`}>
       <div className="introduction-profile-background">
         <div className="content">
           <Introduction />
