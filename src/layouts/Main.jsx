@@ -50,7 +50,7 @@ const Main = () => {
         <div className="flex justify-end relative me-10 z-10">
           <a
             onClick={scrollToTop}
-            className={`bg-primary fixed bottom-15 end-auto  w-15 h-15 flex justify-center items-center rounded-full text-white transition delay-150 duration-500 ease-in-out hover:scale-120 hover:cursor-pointer ${
+            className={`bg-picto-primary fixed bottom-15 end-auto  w-15 h-15 flex justify-center items-center rounded-full text-white transition delay-150 duration-500 ease-in-out hover:scale-120 hover:cursor-pointer ${
               position < 200 && "scale-0"
             }`}
           >

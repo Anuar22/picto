@@ -47,7 +47,7 @@ const Profession = () => {
           </div>
         </div>
         <a
-          href="#"
+          href="#!"
           className="btn btn-primary text-white w-25.5 h-8 text-sm min-sm:w-31.5 min-sm:h-12 min-sm:text-[16px] font-semibold max-md:mx-auto max-md:mb-5"
         >
           Say Hello!

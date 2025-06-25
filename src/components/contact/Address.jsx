@@ -13,7 +13,7 @@ const Address = ({ item }) => {
     >
       <div
         className={`w-12 h-12 ${
-          hover ? "bg-primary" : "bg-[#EDD8FF80]"
+          hover ? "bg-picto-primary" : "bg-[#EDD8FF80]"
         } center rounded-[4px]`}
       >
         <FontAwesomeIcon

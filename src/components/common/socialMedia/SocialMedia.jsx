@@ -9,11 +9,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SocialMedia = () => {
   const socialIcons = [
-    { icon: faFacebookF, link: "#" },
-    { icon: faDribbble, link: "#" },
-    { icon: faInstagram, link: "#" },
-    { icon: faLinkedin, link: "#" },
-    { icon: faBehance, link: "#" },
+    { icon: faFacebookF, link: "#!" },
+    { icon: faDribbble, link: "#!" },
+    { icon: faInstagram, link: "#!" },
+    { icon: faLinkedin, link: "#!" },
+    { icon: faBehance, link: "#!" },
   ];
   return (
     <div>
@@ -22,7 +22,7 @@ const SocialMedia = () => {
           <FontAwesomeIcon
             icon={item.icon}
             size="xl"
-            className={`w-4.5 h-4.5 p-3.75 text-[#9929fb] hover:bg-[#9929fb] hover:text-white rounded-md
+            className={`w-4.5 h-4.5 p-3.75 text-picto-primary hover:bg-picto-primary hover:text-white rounded-md
             }`}
           />
         </a>

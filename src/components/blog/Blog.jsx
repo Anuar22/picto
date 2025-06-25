@@ -11,14 +11,15 @@ import "swiper/css/pagination";
 import "./blog.css";
 
 const Blog = () => {
-  const breakpoin = {
+  // Breakpoints for swiperJS
+  const custom_breakpoints = {
     640: {
       slidesPerView: 2,
-      spaceBetween: 40,
+      spaceBetween: 20,
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 40,
+      spaceBetween: 30,
     },
     1220: {
       slidesPerView: 4,
@@ -32,7 +33,7 @@ const Blog = () => {
       date: "22 Oct, 2020",
       comments: 246,
       title: "Lorem ipsum dolor sit consea. Nulla purus arcu",
-      link: "#",
+      link: "#!",
     },
     {
       id: 2,
@@ -40,7 +41,7 @@ const Blog = () => {
       date: "22 Oct, 2020",
       comments: 246,
       title: "Lorem ipsum dolor sit consea. Nulla purus arcu",
-      link: "#",
+      link: "#!",
     },
     {
       id: 3,
@@ -48,7 +49,7 @@ const Blog = () => {
       date: "22 Oct, 2020",
       comments: 246,
       title: "Lorem ipsum dolor sit consea. Nulla purus arcu",
-      link: "#",
+      link: "#!",
     },
     {
       id: 4,
@@ -56,7 +57,7 @@ const Blog = () => {
       date: "22 Oct, 2020",
       comments: 246,
       title: "Lorem ipsum dolor sit consea. Nulla purus arcu",
-      link: "#",
+      link: "#!",
     },
     {
       id: 5,
@@ -64,7 +65,7 @@ const Blog = () => {
       date: "22 Oct, 2020",
       comments: 246,
       title: "Lorem ipsum dolor sit consea. Nulla purus arcu",
-      link: "#",
+      link: "#!",
     },
     {
       id: 6,
@@ -72,7 +73,7 @@ const Blog = () => {
       date: "22 Oct, 2020",
       comments: 246,
       title: "Lorem ipsum dolor sit consea. Nulla purus arcu",
-      link: "#",
+      link: "#!",
     },
   ];
 
@@ -90,7 +91,7 @@ const Blog = () => {
           slidesPerView={1}
           spaceBetween={50}
           grabCursor={true}
-          breakpoints={breakpoin}
+          breakpoints={custom_breakpoints}
           pagination={{
             clickable: true,
           }}

@@ -6,10 +6,13 @@
 
 @theme {
   --breakpoint-xs: 35rem;
+  /* --color-picto-primary: #9929fb; */ /* Main */
+  --color-picto-primary: #9929fb;
+  --color-soft-white: #f0f1f3;
 }
 
 .btn-primary {
-  @apply bg-[#A53DFF] border-0 text-white;
+  @apply bg-(--color-picto-primary) border-0 text-white hover:bg-[#9929ff] hover:scale-[102%] transition-all duration-500;
 }
 body {
   font-family: "Work Sans", sans-serif;
@@ -33,9 +36,9 @@ body {
   align-items: center;
 }
 
-.bg-primary {
+/* .bg-primary {
   background-color: #a53dff;
-}
+} */
 
 .introduction-profile-background {
   background: radial-gradient(

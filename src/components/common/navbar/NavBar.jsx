@@ -9,7 +9,7 @@ const NavBar = () => {
 
   //   Menu list for the navbar
   const navItems = [
-    { id: 1, name: "Home", url: "" },
+    { id: 1, name: "Home", url: "introduction" },
     { id: 2, name: "About", url: "profile" },
     { id: 3, name: "Process", url: "work-process" },
     { id: 4, name: "Portfolio", url: "portfolio" },
@@ -46,7 +46,7 @@ const NavBar = () => {
   //   }, [theme]);
 
   return (
-    <div className="w-full">
+    <div className="w-full sticky top-0 bg-white z-50">
       <div className="navbar flex justify-between mx-auto content">
         <div className="flex items-center justify-between">
           <div className="dropdown">
@@ -115,15 +115,17 @@ const NavBar = () => {
           </label> */}
           {/* Dark mode button end */}
 
-          <p className="hidden sm:block"><Link
-            className="btn btn-lg btn-primary"
-            href="#contact"
-            to={`contact`}
-            smooth={true}
-            duration={900}
-          >
-            Contact
-          </Link></p>
+          <p className="hidden sm:block">
+            <Link
+              className="btn btn-lg btn-primary"
+              href="#contact"
+              to={`contact`}
+              smooth={true}
+              duration={900}
+            >
+              Contact
+            </Link>
+          </p>
         </div>
       </div>
     </div>

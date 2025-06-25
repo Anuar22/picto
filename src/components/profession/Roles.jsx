@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const Roles = ({ role }) => {
-  const [mouseHover, setMouseHover] = React.useState(false);
-  //   BUG: Remove React.useState
+  const [mouseHover, setMouseHover] = useState(false);
   useEffect(() => {
     window.addEventListener("mouseenter", (e) => {
       console.log("Mouse entered on the: ", e.target);
@@ -17,7 +16,7 @@ const Roles = ({ role }) => {
       /* Scale effect: hover:drop-shadow-2xl hover:shadow-gray-200 hover:scale-[1.01]*/
     >
       <p
-        className={`bg-primary absolute start-0 w-0 h-full mt-[-32px] scale-0 ${
+        className={`bg-picto-primary absolute start-0 w-0 h-full mt-[-32px] scale-0 ${
           mouseHover && "scale-120 duration-200 w-[5px]"
         }`}
       />

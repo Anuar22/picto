@@ -20,14 +20,15 @@ const Projects = ({ data }) => {
         </p>
         <a
           href={data?.link}
-          className="btn border-[#A53DFF] text-[#A53DFF] bg-white text-[16px] font-semibold w-43.25 h-[48px] mt-5"
+          className="btn hover:border-[#A53DFF] hover:text-[#A53DFF] bg-white text-[16px] font-semibold hover:gap-4 transition-all duration-300 w_43.25 h-[48px] mt-5 py-3 px-6"
         >
           Case Study
           <span className="ms-3">
             <FontAwesomeIcon
               icon={faArrowRight}
               size="l"
-              style={{ color: "#A53DFF" }}
+              className=""
+              //   style={{ color: "#A53DFF" }}
             />
           </span>
         </a>
