@@ -12,7 +12,7 @@ import Contact from "../components/contact/Contact";
 
 const Home = () => {
   return (
-    <div className={`relative`}>
+    <div className="relative">
       <div className="introduction-profile-background">
         <div className="content">
           <Introduction />
@@ -37,7 +37,7 @@ const Home = () => {
       <div className="h-138">
         <HappyClients />
       </div>
-      <div className="h-133.5">
+      <div className="h_133.5">
         <Testimonial />
       </div>
       <div className="min-lg:h-165 relative z-10">

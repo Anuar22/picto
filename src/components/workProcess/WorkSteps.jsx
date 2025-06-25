@@ -31,29 +31,5 @@ const WorkSteps = ({ data, style }) => {
     </div>
   );
 };
-//   return (
-//     <div
-//       className={`w-78 h-69 p-8 bg-white rounded-xl relative ${style && style}`}
-//     >
-//       <div
-//         className={`w-18 h-18 ${data?.background} text-center center rounded-md relative`}
-//       >
-//         <p className="">
-//           <FontAwesomeIcon
-//             icon={data?.icon}
-//             size="2xl"
-//             style={{
-//               color: data?.background == "bg-[#A53DFF]" ? "#ffffff" : "#A53DFF",
-//             }}
-//           />
-//         </p>
-//       </div>
-//       <div className="mt-8 relative">
-//         <p className="font-semibold text-xl relative">{`${data?.id} ${data?.title}`}</p>
-//         <p className="mt-3 text-[16px] relative">{data?.description}</p>
-//       </div>
-//     </div>
-//   );
-// };
 
 export default WorkSteps;

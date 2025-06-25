@@ -12,7 +12,7 @@ const Roles = ({ role }) => {
     <div
       onMouseEnter={() => setMouseHover(true)}
       onMouseLeave={() => setMouseHover(false)}
-      className="p-8 bg-white shadow-xl shadow-gray-100 ease-out duration-800 rounded-lg mb-6 flex relative overflow-hidden"
+      className="p-8 bg-white hover:shadow-xl shadow-gray-300 ease-out duration-800 rounded-lg mb-6 flex relative overflow-hidden"
       /* Scale effect: hover:drop-shadow-2xl hover:shadow-gray-200 hover:scale-[1.01]*/
     >
       <p

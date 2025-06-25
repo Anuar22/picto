@@ -36,10 +36,6 @@ body {
   align-items: center;
 }
 
-/* .bg-primary {
-  background-color: #a53dff;
-} */
-
 .introduction-profile-background {
   background: radial-gradient(
       circle at 15% 100%,

@@ -1,0 +1,12 @@
+.footer_link {
+  height: 10px;
+  background-color: red;
+  /* background: linear-gradient(to top, #ffc8c8 40%, transparent 40%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  --tw-duration: 450ms;
+  transition-duration: 450ms; */
+  /* padding-left: 2px;
+  padding-right: 2px; */
+  /* text-decoration: underline white 2px; */
+}

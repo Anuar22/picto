@@ -1,9 +1,11 @@
 .swiper-slide {
   background-color: white;
+  /* position: relative; */
 }
 .swiper-fade .swiper-pagination {
   position: relative;
-  /* margin-top: 10px; */
+  /* top: 20px; */
+  margin-top: 50px;
 }
 .swiper-fade .swiper-button-prev,
 .swiper-button-next {

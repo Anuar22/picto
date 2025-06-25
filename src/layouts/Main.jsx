@@ -8,6 +8,11 @@ import { animateScroll } from "react-scroll";
 
 export const ThemeContext = createContext("light");
 
+const options = {
+  duration: 500,
+  smooth: true,
+};
+
 const Main = () => {
   // States
   const [theme, setTheme] = useState("");
@@ -28,10 +33,6 @@ const Main = () => {
   }, []);
 
   //   Smooth scroll options : react-scroll
-  const options = {
-    duration: 500,
-    smooth: true,
-  };
 
   // Scroll to top function
   const scrollToTop = () => {

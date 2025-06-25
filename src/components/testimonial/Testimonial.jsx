@@ -33,8 +33,8 @@ const Testimonial = () => {
     },
   ];
   return (
-    <div className="content flex justify-center">
-      <div className="w-full h-full min-lg:w-218 h_94">
+    <div className="content flex justify-center pb-25.5">
+      <div className="w-full h-full min-lg:w-218 h_94 cursor-grab">
         <Swiper
           spaceBetween={30}
           effect={"fade"}
