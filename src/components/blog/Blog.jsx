@@ -11,6 +11,20 @@ import "swiper/css/pagination";
 import "./blog.css";
 
 const Blog = () => {
+  const breakpoin = {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    1220: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+  };
   const blogData = [
     {
       id: 1,
@@ -73,9 +87,10 @@ const Blog = () => {
           </p>
         </div>
         <Swiper
-          slidesPerView={4}
-          centeredSlides={false}
+          slidesPerView={1}
+          spaceBetween={50}
           grabCursor={true}
+          breakpoints={breakpoin}
           pagination={{
             clickable: true,
           }}
