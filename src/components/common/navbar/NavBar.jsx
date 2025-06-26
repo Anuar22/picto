@@ -1,21 +1,52 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../../assets/logo.png";
 import { ThemeContext } from "../../../layouts/Main";
-import { Link } from "react-scroll";
+import {
+  Link,
+  DirectLink,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
+
+//   Menu list for the navbar
+
+const navItems = [
+  { id: 1, name: "Home", url: "introduction" },
+  { id: 2, name: "About", url: "profile" },
+  { id: 3, name: "Process", url: "work-process" },
+  { id: 4, name: "Portfolio", url: "portfolio" },
+  { id: 5, name: "Blog", url: "blog" },
+  { id: 6, name: "Services", url: "services" },
+];
+
+const menu = navItems.map((item) => (
+  <li key={item.id}>
+    <Link
+      className="hover:text-purple-700 px-6 py-3"
+      to={item?.url?.toLowerCase()}
+      smooth={true}
+      duration={500}
+    >
+      {item.name}
+    </Link>
+  </li>
+));
 
 const NavBar = () => {
+  const [position, setPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setPosition(window.scrollY);
+    };
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+
   // COMMENT: Context for dark mode or light mode
   //   const [theme, setTheme] = useContext(ThemeContext);
-
-  //   Menu list for the navbar
-  const navItems = [
-    { id: 1, name: "Home", url: "introduction" },
-    { id: 2, name: "About", url: "profile" },
-    { id: 3, name: "Process", url: "work-process" },
-    { id: 4, name: "Portfolio", url: "portfolio" },
-    { id: 5, name: "Blog", url: "blog" },
-    { id: 6, name: "Services", url: "services" },
-  ];
 
   //COMMENT:  Dark theme button function
   //   const swapTheme = (e) => {
@@ -23,19 +54,6 @@ const NavBar = () => {
   //     localStorage.setItem("dark", themeValue);
   //     themeValue ? setTheme("dark") : setTheme("light");
   //   };
-
-  const menu = navItems.map((item) => (
-    <li key={item.id}>
-      <Link
-        className="hover:text-purple-700 px-6 py-3"
-        to={item?.url?.toLowerCase()}
-        smooth={true}
-        duration={500}
-      >
-        {item.name}
-      </Link>
-    </li>
-  ));
 
   //   COMMENT: useEffect to set the theme based on localStorage
   //   useEffect(() => {
@@ -46,7 +64,13 @@ const NavBar = () => {
   //   }, [theme]);
 
   return (
-    <div className="w-full sticky top-0 bg-white z-50">
+    <div
+      className={`  sticky top-0 ${
+        position > 50
+          ? "bg-soft-white border-b border-gray-300"
+          : "bg-white border-white"
+      } z-50 transition-all duration-1000`}
+    >
       <div className="navbar flex justify-between mx-auto content">
         <div className="flex items-center justify-between">
           <div className="dropdown">

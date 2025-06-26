@@ -19,13 +19,13 @@ const Home = () => {
           <Profile />
         </div>
       </div>
-      <div className="bg-soft-white min-xl:h-249.5 min-xl:pt-62">
+      <div className="bg-soft-white min-xl:h-249.5 min-xl:pt-62 ">
         <WorkProcess />
       </div>
       <div className="h_368">
         <Portfolio />
       </div>
-      <div className="h_118 bg-gray-900">
+      <div className="h_118 bg-gray-900 ">
         <WorkTogether />
       </div>
       <div className="h-196 blog-background">

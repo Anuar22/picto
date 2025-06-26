@@ -6,9 +6,9 @@
 
 @theme {
   --breakpoint-xs: 35rem;
-  /* --color-picto-primary: #9929fb; */ /* Main */
   --color-picto-primary: #9929fb;
   --color-soft-white: #f0f1f3;
+  --container-max-width: 1920px !important;
 }
 
 .btn-primary {
@@ -18,15 +18,12 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 .content {
-  @media screen and (min-width: 1024px) {
-    width: 1320px;
-    margin-inline: auto;
-  }
-  @media screen and (max-width: 1320px) {
+  @media screen and (max-width: 1319px) {
     width: 100%;
   }
-  @media screen and (max-width: 1280px) {
-    width: 100vw;
+  @media screen and (min-width: 1320px) {
+    width: 1320px;
+    margin-inline: auto;
   }
 }
 

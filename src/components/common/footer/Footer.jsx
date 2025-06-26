@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "../../../assets/logo.png";
 import "./footer.css";
 
@@ -17,7 +16,7 @@ const Footer = () => {
   const copyrightYear = new Date().getFullYear();
 
   return (
-    <div className="bg-[#2A374A] mt-4 h-[320px] flex justify-between relative w-full">
+    <div className="bg-[#2A374A] mt-4 h-[320px] flex justify-between relative">
       <div className="flex max-md:flex-col justify-between mx-0 lg:px-[2%] xl:px-[10%] 2xl:px-[15%] items-center h-full w-full text-neutral-200 absolute">
         <div className="flex bg-whit border-0 gap-3 lg:me-10 shrink-0">
           <img src={logo} className="h-14 rounded-2xl" alt="logo" />
@@ -31,7 +30,7 @@ const Footer = () => {
               href={`#${item.url.toLowerCase()}`}
             >
               {item.name}
-              <span class="absolute left-0 bottom-0 h-0.5 w-full bg-picto-primary scale-x-0 duration-300 group-hover:scale-x-100"></span>
+              <span className="absolute left-0 bottom-0 h-0.5 w-full bg-picto-primary scale-x-0 duration-300 group-hover:scale-x-100"></span>
             </a>
           ))}
         </div>

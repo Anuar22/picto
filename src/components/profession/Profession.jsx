@@ -28,7 +28,7 @@ const Profession = () => {
       className="content flex max-md:flex-col items-center justify-between h-full"
       id="services"
     >
-      <div className="w-full min-md:w-132.25 h-84.5 flex flex-col justify-between px-3">
+      <div className="w-full  h-84.5 flex flex-col justify-between px-3">
         <div className="w-full">
           {" "}
           {/* h-67 */}
@@ -48,12 +48,12 @@ const Profession = () => {
         </div>
         <a
           href="#!"
-          className="btn btn-primary text-white w-25.5 h-8 text-sm min-sm:w-31.5 min-sm:h-12 min-sm:text-[16px] font-semibold max-md:mx-auto max-md:mb-5"
+          className="btn btn-primary text-white  h-8 text-sm min-sm:w-31.5 min-sm:h-12 min-sm:text-[16px] font-semibold max-md:mx-auto max-md:mb-5"
         >
           Say Hello!
         </a>
       </div>
-      <div className="min-sm:w-162">
+      <div className="">
         {/* NOTE: Required height: 600px */}
         {rolesData.map((role, index) => (
           <Roles role={role} key={index} />
