@@ -7,19 +7,19 @@ const Profession = () => {
       id: 1,
       title: "User Experience (UX)",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.",
+        "I design intuitive and enjoyable experiences by understanding user needs, conducting research, and creating wireframes and prototypes that enhance usability.",
     },
     {
       id: 2,
       title: "User Interface (UI)",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.",
+        "I craft visually appealing and consistent interfaces, focusing on layout, color, and typography to ensure a seamless and engaging user journey.",
     },
     {
       id: 3,
       title: "Web Development",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.",
+        "I build responsive and high-performance web applications using modern technologies, ensuring accessibility, scalability, and maintainability.",
     },
   ];
 
@@ -36,13 +36,14 @@ const Profession = () => {
           <p className="section-title max-md:text-center">What I do?</p>
           <div className="mt-6 w-full text-[14px]">
             <p className="min-sm:text-lg font-normal text-gray-400 mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris
-              ultrices eget lorem ac vestibulum. Suspendis imperdiet,
+              I specialize in designing user experiences, crafting engaging
+              interfaces, and building robust web applications that deliver
+              value and usability.
             </p>
             <p className=" min-sm:text-lg font-normal text-gray-400">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              purus arcu, varius eget velit non.
+              My approach combines creativity and technical expertise to deliver
+              solutions that are both visually appealing and highly functional
+              for users.
             </p>
           </div>
         </div>

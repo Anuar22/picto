@@ -14,7 +14,7 @@ const WorkProcess = () => {
       id: 1,
       title: "Research",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.",
+        "Design meets function in every pixel, blending clarity with intuitive motion.",
       icon: faCalendar,
       background: "bg-[#A53DFF]",
     },
@@ -22,7 +22,7 @@ const WorkProcess = () => {
       id: 2,
       title: "Analyze",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.",
+        "Crafting clean, thoughtful interfaces where form flows seamlessly into function and clarity.",
       icon: faCalendarPlus,
       background: "bg-[#EDD8FF80]",
     },
@@ -30,7 +30,7 @@ const WorkProcess = () => {
       id: 3,
       title: "Design",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.",
+        "I design seamless digital experiences with precision, purpose, and a touch of elegance.",
       icon: faPenToSquare,
       background: "bg-[#EDD8FF80]",
     },
@@ -38,7 +38,7 @@ const WorkProcess = () => {
       id: 4,
       title: "Launch",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.",
+        "I craft digital products where thoughtful design meets performance-driven, responsive development.",
       icon: faHardDrive,
       background: "bg-[#EDD8FF80]",
     },
@@ -52,13 +52,14 @@ const WorkProcess = () => {
       <div className="min-[1184px]:w-132.25 max-xl:px-10 max-[1184px]:text-center">
         <p className="min-md:text-5xl text-2xl font-semibold">Work Process</p>
         <p className="mt-6 mb-4 min-md:text-[18px] text-sm font-normal text-gray-500">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus
-          arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices
-          eget lorem ac vestibulum. Suspendis imperdiet,
+          Driven by design and powered by code, I create digital interfaces that
+          feel intuitive and perform seamlessly. Every layout, animation, and
+          component is crafted with intention — merging usability with visual
+          clarity,
         </p>
         <p className="mt-6 min-md:text-[18px] text-sm font-normal text-gray-500">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus
-          arcu, varius eget velit non.
+          I blend clean design with efficient code to build engaging,
+          user-friendly web experiences that stand out.
         </p>
       </div>
 

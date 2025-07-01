@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../../assets/logo.png";
 import { ThemeContext } from "../../../layouts/Main";
+import "./navBar.css";
+
 import {
   Link,
   DirectLink,
@@ -22,22 +24,27 @@ const navItems = [
   { id: 6, name: "Services", url: "services" },
 ];
 
-const menu = navItems.map((item) => (
-  <li key={item.id}>
-    <Link
-      className="hover:text-purple-700 px-6 py-3"
-      to={item?.url?.toLowerCase()}
-      smooth={true}
-      duration={500}
-    >
-      {item.name}
-    </Link>
-  </li>
-));
-
 const NavBar = () => {
   const [position, setPosition] = useState(0);
-
+  const menu = navItems.map((item) => (
+    <li key={item.id}>
+      <Link
+        to={item.url.toLowerCase()}
+        smooth={true}
+        duration={1000}
+        spy={true}
+        offset={-140}
+        activeStyle={{
+          backgroundColor: "#9929fb",
+          color: "white",
+          animationDirection: "alternate",
+        }}
+        className="hover:text-picto-primary px-5 py-3 mx-1"
+      >
+        {item.name}
+      </Link>
+    </li>
+  ));
   useEffect(() => {
     const handleScroll = () => {
       setPosition(window.scrollY);
@@ -65,7 +72,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={`  sticky top-0 ${
+      className={`sticky top-0 ${
         position > 50
           ? "bg-soft-white border-b border-gray-300"
           : "bg-white border-white"
@@ -109,7 +116,7 @@ const NavBar = () => {
           </div>
         </div>
 
-        <div className=" lg:flex items-center">
+        <div className="lg:flex items-center">
           <ul className="hidden lg:flex menu menu-horizontal text-[16px] font-medium md:shrink-0">
             {menu}
           </ul>

@@ -32,7 +32,7 @@ const Blog = () => {
       image: img1,
       date: "22 Oct, 2020",
       comments: 246,
-      title: "Lorem ipsum dolor sit consea. Nulla purus arcu",
+      title: "Designing Engaging User Interfaces for Modern Web Apps",
       link: "#!",
     },
     {
@@ -40,7 +40,7 @@ const Blog = () => {
       image: img2,
       date: "22 Oct, 2020",
       comments: 246,
-      title: "Lorem ipsum dolor sit consea. Nulla purus arcu",
+      title: "Tips for Effective Dashboard Layouts and Usability",
       link: "#!",
     },
     {
@@ -48,7 +48,7 @@ const Blog = () => {
       image: img3,
       date: "22 Oct, 2020",
       comments: 246,
-      title: "Lorem ipsum dolor sit consea. Nulla purus arcu",
+      title: "How to Visualize Data for Better Product Decisions",
       link: "#!",
     },
     {
@@ -56,7 +56,7 @@ const Blog = () => {
       image: img4,
       date: "22 Oct, 2020",
       comments: 246,
-      title: "Lorem ipsum dolor sit consea. Nulla purus arcu",
+      title: "Responsive Design: Adapting to All Devices Seamlessly",
       link: "#!",
     },
     {
@@ -64,7 +64,7 @@ const Blog = () => {
       image: img2,
       date: "22 Oct, 2020",
       comments: 246,
-      title: "Lorem ipsum dolor sit consea. Nulla purus arcu",
+      title: "Streamlining Workflows with UI/UX Best Practices",
       link: "#!",
     },
     {
@@ -72,7 +72,7 @@ const Blog = () => {
       image: img1,
       date: "22 Oct, 2020",
       comments: 246,
-      title: "Lorem ipsum dolor sit consea. Nulla purus arcu",
+      title: "Optimizing Interface Components for Performance",
       link: "#!",
     },
   ];

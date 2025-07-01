@@ -43,12 +43,12 @@ const Introduction = () => {
             applications through carefully crafted code and user-centric design.
           </p>
           <p className="text-center sm:text-start">
-          <a
-            className="btn-primary btn w-32 h-12 text-white"
-            href="mailto:example@gmail.com"
-          >
-            Say Hello!
-          </a>
+            <a
+              className="btn-primary btn w-32 h-12 text-white"
+              href="mailto:example@gmail.com"
+            >
+              Say Hello!
+            </a>
           </p>
         </div>
         <div className="flex z-0 max-[1150px]:hidden">

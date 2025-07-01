@@ -12,33 +12,33 @@ const Testimonial = () => {
   const testimonialData = [
     {
       message:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.",
-      quote: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis nostrum eos distinctio ad eligendi asperiores doloribus expedita! Officia blanditiis unde numquam quam vitae, quaerat ab? Deleniti nihil molestias illum sequi inventore quidem quo, eligendi nam adipisci ratione quibusdam sit odio earum! Ea eius officia mollitia, possimus ex laborum ipsa soluta.`,
+        "Working with this team was a fantastic experience. Their attention to detail and commitment to quality exceeded our expectations.",
+      quote: `From the initial consultation to the final delivery, every step was handled professionally. The end result was a product that not only met our needs but also impressed our stakeholders. Highly recommended!`,
       name: "Esther Howard",
-      designation: "Managing Director, ABC company",
+      designation: "Managing Director, ABC Company",
     },
     {
       message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, unde?",
-      quote: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt unde alias magnam delectus laudantium voluptatem iure nemo error, esse a atque rerum suscipit facere cumque minima officiis praesentium dicta nulla reprehenderit dolorum soluta vitae ut tenetur autem? Ab pariatur nobis numquam sequi. Pariatur illum vel eum quasi minus dolores quam?`,
+        "Their expertise in UI/UX design helped us transform our digital presence and improve user engagement.",
+      quote: `The team demonstrated a deep understanding of our requirements and delivered a solution that was both visually appealing and highly functional. Communication was clear throughout the project.`,
       name: "Ali Haider",
-      designation: "COO, XYZ company",
+      designation: "COO, XYZ Company",
     },
     {
       message:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, debitis!",
-      quote: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestiae consectetur odit molestias blanditiis ipsum quos numquam beatae unde voluptas perferendis cupiditate recusandae, cumque accusamus vel veniam corrupti. Fugiat libero perspiciatis incidunt quae et? Temporibus molestiae, dolorum ad, tempore velit dolores numquam dolorem, voluptate tenetur similique labore aliquid? Eaque, repellendus?`,
+        "Professional, reliable, and creative—everything you want in a development partner.",
+      quote: `They delivered our project on time and went above and beyond to ensure our satisfaction. The new features have made a significant difference for our users. We look forward to working together again.`,
       name: "Elon Max",
-      designation: "Managing Director, KFC company",
+      designation: "Managing Director, KFC Company",
     },
   ];
   return (
     <div className="content flex justify-center pb-25.5">
-      <div className="w-full h-full min-lg:w-218 h_94 cursor-grab">
+      <div className="w-full h-full min-lg:w-218 h_94 cursor-grab ">
         <Swiper
+          id="testimonialSwiper"
           spaceBetween={30}
-          effect={"fade"}
-          navigation={true}
+          navigation={false}
           pagination={{
             clickable: true,
           }}

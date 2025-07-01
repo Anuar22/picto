@@ -2,8 +2,9 @@
   background-color: white;
   /* position: relative; */
 }
-.swiper-fade .swiper-pagination {
+#testimonialSwiper .swiper-pagination {
   position: relative;
+  /* background-color: red; */
   /* top: 20px; */
   margin-top: 50px;
 }
@@ -11,7 +12,7 @@
 .swiper-button-next {
   visibility: hidden;
 }
-/* .swiper-wrapper {
-  background-color: white;
-  overflow: hidden;
+/* .swiper-slide {
+  opacity: 99%;
+  background-color: red;
 } */

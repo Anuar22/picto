@@ -7,6 +7,7 @@
 @theme {
   --breakpoint-xs: 35rem;
   --color-picto-primary: #9929fb;
+  --color-picto-primary-dark: #650fa0;
   --color-soft-white: #f0f1f3;
   --container-max-width: 1920px !important;
 }

@@ -15,7 +15,7 @@ const Portfolio = () => {
       category: "UI-UX DESIGN",
       title: "Product Admin Dashboard",
       description:
-        "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.",
+        "I focus on crafting smooth, responsive interfaces that balance aesthetic appeal with practical functionality.",
       link: "#!",
     },
     {
@@ -24,7 +24,7 @@ const Portfolio = () => {
       category: "UI-UX DESIGN",
       title: "Product Admin Dashboard",
       description:
-        "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.",
+        "Designed an intuitive dashboard for product management, emphasizing clarity and user efficiency.",
       link: "#!",
     },
     {
@@ -33,7 +33,7 @@ const Portfolio = () => {
       category: "UI-UX DESIGN",
       title: "Product Admin Dashboard",
       description:
-        "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.",
+        "Developed a modern admin panel with a focus on usability and seamless navigation for end users.",
       link: "#!",
     },
     {
@@ -42,7 +42,7 @@ const Portfolio = () => {
       category: "UI-UX DESIGN",
       title: "Product Admin Dashboard",
       description:
-        "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.",
+        "Created a responsive dashboard layout that adapts smoothly across devices and screen sizes.",
       link: "#!",
     },
     {
@@ -51,7 +51,7 @@ const Portfolio = () => {
       category: "UI-UX DESIGN",
       title: "Product Admin Dashboard",
       description:
-        "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.",
+        "Implemented interactive charts and widgets to visualize product data effectively for stakeholders.",
       link: "#!",
     },
     {
@@ -60,7 +60,7 @@ const Portfolio = () => {
       category: "UI-UX DESIGN",
       title: "Product Admin Dashboard",
       description:
-        "Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id imperdiet lacus.",
+        "Enhanced user experience by streamlining workflows and optimizing interface components.",
       link: "#!",
     },
   ];
