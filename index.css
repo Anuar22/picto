@@ -4,8 +4,31 @@
   themes: light --default, dark --prefersdark, cupcake;
 }
 
+/* 
+    NOTE: 1px = 0.0625rem; 1rem = 16px
+ */
+
+/* 
+ 536px = 33.5rem
+ 363px = 22.6875rem
+ 35rem = 560px
+ 340px = 21.25rem
+ */
+
+* {
+  transition-property: all;
+  transition-timing-function: var(
+    --tw-ease,
+    var(--default-transition-timing-function)
+  );
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 200ms;
+  transition-duration: 200ms;
+}
+
 @theme {
-  --breakpoint-xs: 35rem;
+  /* TODO: make a breakpoint for 320 breakpoint */
+  --breakpoint-xxs: 21.25rem;
   --color-picto-primary: #9929fb;
   --color-picto-primary-dark: #650fa0;
   --color-soft-white: #f0f1f3;
@@ -18,13 +41,25 @@
 body {
   font-family: "Work Sans", sans-serif;
 }
-.content {
-  @media screen and (max-width: 1319px) {
+@media screen and (max-width: 1319px) {
+  .content {
     width: 100%;
   }
-  @media screen and (min-width: 1320px) {
+}
+
+@media screen and (min-width: 1320px) {
+  .content {
     width: 1320px;
     margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .section-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    color: #132238;
   }
 }
 
@@ -54,13 +89,4 @@ body {
   font-size: 48px;
   line-height: 56px;
   color: #132238;
-}
-
-@media (width<640px) {
-  .section-title {
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 48px;
-    color: #132238;
-  }
 }

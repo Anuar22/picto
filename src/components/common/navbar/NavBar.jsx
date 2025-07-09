@@ -3,15 +3,7 @@ import logo from "../../../assets/logo.png";
 import { ThemeContext } from "../../../layouts/Main";
 import "./navBar.css";
 
-import {
-  Link,
-  DirectLink,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import { Link, DirectLink, Element, Events } from "react-scroll";
 
 //   Menu list for the navbar
 
@@ -24,27 +16,28 @@ const navItems = [
   { id: 6, name: "Services", url: "services" },
 ];
 
+const menu = navItems.map((item) => (
+  <li key={item.id} onMouseDown={(e) => e.preventDefault()}>
+    <Link
+      to={item.url.toLowerCase()}
+      smooth={true}
+      duration={1000}
+      spy={true}
+      offset={-140}
+      activeStyle={{
+        backgroundColor: "#9929fb",
+        color: "white",
+      }}
+      className={`hover:text-picto-primary px-5 py-3 mx-1`}
+    >
+      {item.name}
+    </Link>
+  </li>
+));
+
 const NavBar = () => {
   const [position, setPosition] = useState(0);
-  const menu = navItems.map((item) => (
-    <li key={item.id}>
-      <Link
-        to={item.url.toLowerCase()}
-        smooth={true}
-        duration={1000}
-        spy={true}
-        offset={-140}
-        activeStyle={{
-          backgroundColor: "#9929fb",
-          color: "white",
-          animationDirection: "alternate",
-        }}
-        className="hover:text-picto-primary px-5 py-3 mx-1"
-      >
-        {item.name}
-      </Link>
-    </li>
-  ));
+
   useEffect(() => {
     const handleScroll = () => {
       setPosition(window.scrollY);
@@ -83,6 +76,7 @@ const NavBar = () => {
           <div className="dropdown">
             {/* Menu for small screen start */}
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+              {/* TODO: dynamic menu bar (X | =) */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -100,17 +94,18 @@ const NavBar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow font-semibold flex-nowrap bg-white text-black"
+              className="menu menu-lg dropdown-content rounded-box z-1 mt-3 w-lvw p-2 shadow font-semibold flex-nowrap bg-white text-black"
             >
+              {/* TODO: small menu should close after click on it */}
+              {/* TODO: Transition of menu from top to position (Small animation) */}
               {menu}
             </ul>
-            {/* Menu for small screen end */}
           </div>
 
           {/* Logo and title for small screen start */}
-          <div className="flex border-0 w-[213px] h-[56px]">
-            <img src={logo} className="h-14 rounded-2xl" alt="logo" />
-            <p className="text-[32px] my-auto ms-[12px] font-semibold">
+          <div className="flex items-center border-0 ">
+            <img src={logo} className="h-8 sm:h-14 rounded-2xl" alt="logo" />
+            <p className="text-2xl sm:text-[32px] my-auto ms-[12px] font-semibold">
               Brooklyn
             </p>
           </div>
@@ -146,9 +141,9 @@ const NavBar = () => {
           </label> */}
           {/* Dark mode button end */}
 
-          <p className="hidden sm:block">
+          <p className="">
             <Link
-              className="btn btn-lg btn-primary"
+              className="btn btn-md sm:btn-lg btn-primary"
               href="#contact"
               to={`contact`}
               smooth={true}

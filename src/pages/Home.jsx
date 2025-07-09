@@ -19,7 +19,7 @@ const Home = () => {
           <Profile />
         </div>
       </div>
-      <div className="bg-soft-white min-xl:h-249.5 min-xl:pt-62 ">
+      {/* <div className="bg-soft-white min-xl:h_249.5 min-xl:pt-62 ">
         <WorkProcess />
       </div>
       <div className="h_368">
@@ -42,7 +42,7 @@ const Home = () => {
       </div>
       <div className="min-lg:h-165 relative z-10">
         <Contact />
-      </div>
+      </div> */}
     </div>
   );
 };
