@@ -5,15 +5,18 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { ThemeContext } from "../../layouts/Main";
 import SocialMedia from "../common/socialMedia/SocialMedia";
 const Profile = () => {
+  // COMMENT: Dark Theme config start
   const [theme] = useContext(ThemeContext);
   const [dark, setDark] = useState(theme === "dark");
   useEffect(() => {
     theme === "dark" ? setDark(true) : setDark(false);
   }, [theme]);
 
+  // COMMENT: Dark Theme config end
+
   return (
     <div
-      className={`relative xl:-bottom-28 z-10 rounded-2xl bg-white min-xl:drop-shadow-2xl max-xl:mb-5 shadow-white xl:p-28`}
+      className={`relative mx-4 min-xxl:mx-0.5 -bottom-28 z-10 rounded-2xl bg-white drop-shadow-2xl max-xl:mb-5 shadow-white xl:p-28`}
       id="profile"
     >
       <div className="flex max-md:flex-col justify-between items-center">

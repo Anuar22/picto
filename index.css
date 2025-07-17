@@ -5,14 +5,12 @@
 }
 
 /* 
-    NOTE: 1px = 0.0625rem; 1rem = 16px
- */
-
-/* 
+NOTE: 1px = 0.0625rem; 1rem = 16px
  536px = 33.5rem
  363px = 22.6875rem
  35rem = 560px
  340px = 21.25rem
+ 1320px = 82.5rem
  */
 
 * {
@@ -27,8 +25,8 @@
 }
 
 @theme {
-  /* TODO: make a breakpoint for 320 breakpoint */
   --breakpoint-xxs: 21.25rem;
+  --breakpoint-xxl: 82.5rem;
   --color-picto-primary: #9929fb;
   --color-picto-primary-dark: #650fa0;
   --color-soft-white: #f0f1f3;
