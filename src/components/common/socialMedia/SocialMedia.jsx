@@ -22,7 +22,7 @@ const SocialMedia = () => {
           <FontAwesomeIcon
             icon={item.icon}
             size="xl"
-            className={`w-4.5 h-4.5 p-3.75 text-picto-primary hover:bg-picto-primary hover:text-white rounded-md
+            className={`w-4 h-4 xxs:w-4.5 xxs:h-4.5 xxs:p-3 lg:p-3.75 p-2.5 text-picto-primary hover:bg-picto-primary hover:text-white rounded-md
             }`}
           />
         </a>

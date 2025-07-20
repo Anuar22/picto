@@ -16,31 +16,42 @@ const Profile = () => {
 
   return (
     <div
-      className={`relative mx-4 min-xxl:mx-0.5 -bottom-28 z-10 rounded-2xl bg-white drop-shadow-2xl max-xl:mb-5 shadow-white xl:p-28`}
+      className={`relative mx-4 min-xxl:mx-0.5 -bottom-28 z-10 rounded-2xl bg-red-200 drop-shadow-2xl max-xl:mb-5 shadow-white xl:p-28 lg:p-20 md:p-16 sm:p-10 p-4`}
       id="profile"
     >
-      <div className="flex max-md:flex-col justify-between items-center">
-        <div className="W-106 h-126 rounded-2xl">
-          <div className="min-[440px]:w-106 h-117 object-fill overflow-hidden rounded-xl">
+      <div className="flex max-md:flex-col justify-between items-center gap-6">
+        {/* Profile image */}
+        <div className="xxl:max-w-106 w-auto h-auto xxl:max-h-126">
+          <div className="max-w-106 h-117 object-fill overflow-hidden rounded-xl">
             <img
-              className="bg-soft-white h-[120%] object-cover "
+              className="bg-soft-white h-[120%] object-cover"
               src={person}
               alt=""
             />
           </div>
           {/* Social media section */}
-          <div className=" relative bottom-9">
+          <div className="relative bottom-9">
+            <div className="flex justify-center">
+              <div className="px-3 max-w-66 py-9 max-h-18 z-50 text-center bg-white rounded-[4px] center shadow-2xl drop-shadow-2xl shadow-white">
+                <SocialMedia />
+              </div>
+            </div>
+          </div>
+          {/* <div className=" relative bottom-9">
             <div className="flex justify-center">
               <div className="w-66 h-18 z-50 text-center bg-white rounded-[4px] center shadow-2xl drop-shadow-2xl shadow-white">
                 <SocialMedia />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
-        <div className="max-sm:w-full w-134 min-[1160px]:p-5">
+        {/* Profile Description */}
+        <div className="max-sm:w-full w-[33rem] min-[1160px]:p-5">
+          {/* w-134 */}
+          {/* text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl font-semibold w-full */}
           <h2
-            className={`text-[38px] max-sm:text-[30px] font-semibold mb-8 ${
+            className={`text-2xl xxs:text-3xl sm:text-4xl max-md:text-center lg:text-[38px] font-semibold mb-8 ${
               dark && "text-black"
             }`}
           >

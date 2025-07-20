@@ -25,8 +25,8 @@ NOTE: 1px = 0.0625rem; 1rem = 16px
 }
 
 @theme {
-  --breakpoint-xxs: 21.25rem;
-  --breakpoint-xxl: 82.5rem;
+  --breakpoint-xxs: 21.25rem; /* COMMENT: 340px */
+  --breakpoint-xxl: 82.5rem; /* COMMENT: 1320px */
   --color-picto-primary: #9929fb;
   --color-picto-primary-dark: #650fa0;
   --color-soft-white: #f0f1f3;
