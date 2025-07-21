@@ -51,7 +51,7 @@ const Profile = () => {
           {/* w-134 */}
           {/* text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl font-semibold w-full */}
           <h2
-            className={`text-2xl xxs:text-3xl sm:text-4xl max-md:text-center lg:text-[38px] font-semibold mb-8 ${
+            className={`text-2xl xxs:text-3xl sm:text-4xl lg:text-[38px] text-[min(24px,38px)] max-md:text-center font-semibold mb-8 ${
               dark && "text-black"
             }`}
           >
