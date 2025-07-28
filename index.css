@@ -11,6 +11,7 @@ NOTE: 1px = 0.0625rem; 1rem = 16px
  35rem = 560px
  340px = 21.25rem
  1320px = 82.5rem
+ 370px = 23.125rem
  */
 
 * {
@@ -26,6 +27,7 @@ NOTE: 1px = 0.0625rem; 1rem = 16px
 
 @theme {
   --breakpoint-xxs: 21.25rem; /* COMMENT: 340px */
+  --breakpoint-xs: 23.125rem; /* COMMENT: 363px */
   --breakpoint-xxl: 82.5rem; /* COMMENT: 1320px */
   --color-picto-primary: #9929fb;
   --color-picto-primary-dark: #650fa0;
@@ -49,14 +51,12 @@ body {
 }
 
 .center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @apply flex justify-center items-center;
 }
 
 .introduction-profile-background {
   background: radial-gradient(
-      circle at 15% 100%,
+      circle at 12% 100%,
       #ffe2b0f5 1% 5px,
       transparent 15%
     ),

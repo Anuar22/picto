@@ -1,23 +1,26 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState } from "react";
 
 const WorkSteps = ({ data, style }) => {
+  const [hover, setHover] = useState(false);
   /* w-52 h-46 */
   return (
     <div
-      className={`min-[440px]:w-52 min-[440px]:h-46 min-xs:w-65 min-xs:h-57.5 min-sm:w-78 min-sm:h-69 p-4 min-sm:p-8 bg-white rounded-xl ${
-        style && style
-      }`}
+      className={`rounded-xl ${style && style}`}
+      onMouseOver={() => setHover(true)}
+      onMouseOut={() => setHover(false)}
     >
       <div
-        className={`w-11 h-11 min-sm:w-18 min-sm:h-18 ${data?.background} text-center center rounded-md`}
+        className={`w-11 h-11 min-sm:w-18 min-sm:h-18 ${
+          hover ? "bg-[#A53DFF]" : "bg-soft-white"
+        } text-center center rounded-md`}
       >
         <p className="">
           <FontAwesomeIcon
             icon={data?.icon}
             className="text-xl min-sm:text-3xl"
             style={{
-              color: data?.background == "bg-[#A53DFF]" ? "#ffffff" : "#A53DFF",
+              color: hover ? "#ffffff" : "black",
             }}
           />
         </p>

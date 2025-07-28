@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { ThemeContext } from "../../layouts/Main";
 import SocialMedia from "../common/socialMedia/SocialMedia";
+
 const Profile = () => {
   // COMMENT: Dark Theme config start
   const [theme] = useContext(ThemeContext);
@@ -16,7 +17,7 @@ const Profile = () => {
 
   return (
     <div
-      className={`relative mx-4 min-xxl:mx-0.5 -bottom-28 z-10 rounded-2xl bg-red-200 drop-shadow-2xl max-xl:mb-5 shadow-white xl:p-28 lg:p-20 md:p-16 sm:p-10 p-4`}
+      className={`relative mx-4 min-xxl:mx-0.5 -bottom-28 z-10 rounded-2xl bg-white drop-shadow-2xl max-xl:mb-5 shadow-white xl:p-28 lg:p-20 md:p-16 sm:p-10 p-4`}
       id="profile"
     >
       <div className="flex max-md:flex-col justify-between items-center gap-6">
@@ -32,7 +33,7 @@ const Profile = () => {
           {/* Social media section */}
           <div className="relative bottom-9">
             <div className="flex justify-center">
-              <div className="px-3 max-w-66 py-9 max-h-18 z-50 text-center bg-white rounded-[4px] center shadow-2xl drop-shadow-2xl shadow-white">
+              <div className="px-3 max-w-66 py-3 z-50 text-center bg-white rounded-[4px] center shadow-2xl drop-shadow-2xl shadow-white">
                 <SocialMedia />
               </div>
             </div>
@@ -58,7 +59,7 @@ const Profile = () => {
             I am Professional User Experience Designer
           </h2>
           <div
-            className={`text-[18px] font-normal ${
+            className={`text-xs xxs:text-lg lg:text-[18px] font-normal ${
               dark ? "text-gray-800" : "text-gray-600"
             }`}
           >
@@ -73,11 +74,15 @@ const Profile = () => {
             </p>
           </div>
           <div className="mt-8 flex max-sm:justify-center">
-            <a className="btn btn-primary w-33 h-12 text-[16px]" href="#!">
+            <a
+              className="btn xxs:btn-lg px-6 max-xs:px-2 min-xxs:py-3 btn-primary text-[16px]"
+              href="#!"
+            >
               My Projects
             </a>
+            {/* w-47.5 h-12 */}
             <a
-              className={`btn hover:border-picto-primary bg-white duration-300 transition-all hover:text-picto-primary w-47.5 h-12 ms-4 text-[16px] ${
+              className={`btn xxs:btn-lg px-6 max-xs:px-2 min-xxs:py-3 hover:border-picto-primary bg-white duration-300 transition-all hover:text-picto-primary  ms-4 text-[16px] ${
                 dark && "bg-transparent"
               }`}
               href="#!"

@@ -26,16 +26,16 @@ const Form = () => {
             <input
               type="text"
               placeholder="Name*"
-              className="input input-lg border-0 border-b-2 border-gray-100 w-full"
+              className="input input-lg border-0 border-gray-100 w-full"
               required
             />
             <span>Name*</span>
           </label>
-          <label /* Email */ className="floating-label border-0 ">
+          <label /* Email */ className="floating-label border-none ">
             <input
               type="email"
               placeholder="Email*"
-              className="input input-lg border-0 border-b-2 border-gray-100 w-full"
+              className="input input-lg border-0 border-gray-100 w-full"
               required
             />
             <span>Email*</span>
@@ -44,7 +44,7 @@ const Form = () => {
             <input
               type="text"
               placeholder="Location*"
-              className="input input-lg border-0 border-b-2 border-gray-100 w-full"
+              className="input input-lg border-0 border-gray-100 w-full"
               required
             />
             <span>Location*</span>
@@ -55,7 +55,7 @@ const Form = () => {
               <input
                 type="text"
                 placeholder="Budget*"
-                className="input input-lg border-0 border-b-2 border-gray-100 "
+                className="input input-lg border-0 border-gray-100 "
                 required
               />
               <span>Budget*</span>
@@ -66,7 +66,7 @@ const Form = () => {
               <input
                 type="text"
                 placeholder="Subject*"
-                className="input input-lg border-0 border-b-2 border-gray-100 w-full"
+                className="input input-lg border-0 border-gray-100 w-full"
                 required
               />
               <span>Subject*</span>
@@ -77,7 +77,7 @@ const Form = () => {
             <input
               type="text"
               placeholder="Message*"
-              className="input input-lg border-0 border-b-2 border-gray-100 w-full"
+              className="input input-lg border-0 border-gray-100 w-full"
               required
             />
             <span>Message*</span>
