@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
-const repoName = "picto"; // Replace with your repo name
+const repoName = "picto";
 
 // https://vite.dev/config/
 export default defineConfig({
