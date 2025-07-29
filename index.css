@@ -47,7 +47,7 @@ body {
 }
 
 .section-title {
-  @apply text-[#132238] font-semibold text-5xl max-sm:text-4xl max-sm:font-medium;
+  @apply text-[#132238] md:font-semibold text-2xl md:text-5xl font-medium;
 }
 
 .center {

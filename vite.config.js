@@ -4,7 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
-  // Load env file for the current mode in the root directory.
   const env = loadEnv(mode, process.cwd(), "");
   return {
     base: `/${env.VITE_REPO_NAME}/`,

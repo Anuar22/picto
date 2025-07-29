@@ -97,7 +97,6 @@ const NavBar = () => {
               className="menu menu-lg dropdown-content rounded-box z-1 mt-3 w-lvw p-2 shadow font-semibold flex-nowrap bg-white text-black"
             >
               {/* TODO: small menu should close after click on it */}
-              {/* TODO: Transition of menu from top to position (Small animation) */}
               {menu}
             </ul>
           </div>

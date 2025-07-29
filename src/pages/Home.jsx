@@ -12,7 +12,7 @@ import Contact from "../components/contact/Contact";
 
 const Home = () => {
   return (
-    <div className="relative ">
+    <div className="relative">
       {/* <div className="introduction-profile-background">
         <div className="content">
           <Introduction />
