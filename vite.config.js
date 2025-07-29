@@ -1,9 +1,11 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
+const repoName = "picto"; // Replace with your repo name
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: `/${repoName}/`,
   plugins: [react(), tailwindcss()],
   //   COMMENT: server object is used for testing responsive design on different devices
   //   server: {

@@ -3,6 +3,14 @@ import React, { useState } from "react";
 
 const WorkSteps = ({ data, style }) => {
   const [hover, setHover] = useState(false);
+  /* 
+  make a component that will take data as props and display the icon, title, and description
+  the component should have a hover effect that changes the background color of the icon and the text
+  the component should be responsive and have a minimum width and height of 52px and 46px respectively
+  the component should have a rounded border and a shadow effect
+  the component should have a minimum width and height of 11px and 11px respectively
+  
+  */
   /* w-52 h-46 */
   return (
     <div
