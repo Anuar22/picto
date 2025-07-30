@@ -1,12 +1,5 @@
-import React from "react";
 import "./workProcess.css";
 import WorkSteps from "./WorkSteps";
-import {
-  faCalendar,
-  faCalendarPlus,
-  faHardDrive,
-  faPenToSquare,
-} from "@fortawesome/free-solid-svg-icons";
 
 const workStepData = [
   {
@@ -45,28 +38,28 @@ const workStepData = [
 
 const WorkProcess = () => {
   return (
-    <div className="content grid min-xl:grid-cols-2 min-xl:items-center px-2 bg-red-300">
-      <div className="min-lg:pe-10 min-xl:pe-35.75 bg-green-300">
+    <div className="content grid xl:grid-cols-2 xl:items-center px-2 bg-[#F0F1F3]">
+      <div className="lg:pe-10 xl:pe-35.75 mb-3">
         <p className="section-title max-xl:text-center">Work Process</p>
-        <p className="mt-6 mb-4 min-md:text-[18px] text-sm font-normal text-center text-gray-500">
+        <p className="mt-6 mb-4 md:text-[18px] text-sm font-normal max-xl:text-center text-gray-500">
           Driven by design and powered by code, I create digital interfaces that
           feel intuitive and perform seamlessly. Every layout, animation, and
           component is crafted with intention — merging usability with visual
           clarity,
         </p>
-        <p className="mt-6 min-md:text-[18px] text-sm font-normal text-center text-gray-500">
+        <p className="mt-6 md:text-[18px] text-sm font-normal max-xl:text-center text-gray-500">
           I blend clean design with efficient code to build engaging,
           user-friendly web experiences that stand out.
         </p>
       </div>
 
-      <div className="grid xs:grid-cols-2 justify-end my-2 w-fit mx-auto">
+      <div className="grid xs:grid-cols-2 justify-end my-2 w-fit mx-auto ">
         {workStepData.map((data, index) => {
           return (
             /*  min-[440px]:w-52 min-[440px]:h-46 min-xs:w-65 min-xs:h-57.5 min-sm:w-78 min-sm:h-69 */
             <WorkSteps
               data={data}
-              style={`max-xs:mt-3 p-2 bg-white sm:max-w-78 ${
+              style={`max-xs:mt-3 p-4 sm:p-8 bg-white aspect-auto sm:max-w-78 ${
                 index % 2 == 1 ? "xs:ms-3 xs:mt-6 " : "xs:mb-6"
               }`}
               key={index}

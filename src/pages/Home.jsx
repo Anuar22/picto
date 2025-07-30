@@ -13,16 +13,16 @@ import Contact from "../components/contact/Contact";
 const Home = () => {
   return (
     <div className="relative">
-      {/* <div className="introduction-profile-background">
+      <div className="introduction-profile-background">
         <div className="content">
           <Introduction />
           <Profile />
         </div>
-      </div> */}
-      <div className="bg-soft-white min-xl:h_249.5">
+      </div>
+      <div className="bg-soft-white min-xl:h_249.5 pt-30">
         <WorkProcess />
       </div>
-      {/* <div className="h_368">
+      <div className="h_368">
         <Portfolio />
       </div>
       <div className="h_118 bg-gray-900 ">
@@ -42,7 +42,7 @@ const Home = () => {
       </div>
       <div className="min-lg:h-165 relative z-10">
         <Contact />
-      </div> */}
+      </div>
     </div>
   );
 };
