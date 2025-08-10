@@ -18,7 +18,7 @@ const InformationSummary = ({ item }) => {
           {item.description}
         </p>
         <p
-          className={`text-[8px] xxs:text-[9px] sm:text-[16px] font-normal px-[0.90rem] sm:px-[1rem] text-nowrap ${
+          className={`text-[8px] xxs:text-[9px] sm:text-[16px] font-normal px-[0.90rem] sm:px-[1rem] text-wrap ${
             lightTheme ? "text-gray-500" : "text-gray-300"
           }`}
         >

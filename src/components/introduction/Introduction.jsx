@@ -27,7 +27,7 @@ const Introduction = () => {
 
   return (
     <div
-      className="flex max-lg:flex-col-reverse sm:justify-between pt-10 lg:pt-31.5 mb-27.5 max-xl:gap-2 p-2"
+      className="flex max-lg:flex-col-reverse sm:justify-between pt-10 lg:pt-31.5 lg:mb-27.5 max-xl:gap-2 p-2"
       id="introduction"
     >
       <div className="w-full flex flex-col justify-between max-lg:text-center">
@@ -54,7 +54,7 @@ const Introduction = () => {
           </p>
         </div>
         <div className="mx-auto lg:mx-0 relative">
-          <div className="grid grid-flow-col w-fit mt-10 sm:gap-0">
+          <div className="grid max-xxs:grid-flow-col grid-cols-3 w-fit mt-10 gap-1">
             {informationSummaryData.map((item) => (
               <InformationSummary key={item.id} item={item} />
             ))}

@@ -102,12 +102,12 @@ const NavBar = () => {
           </div>
 
           {/* Logo and title for small screen start */}
-          <div className="flex items-center border-0 ">
+          <a href="#!" className="flex items-center border-0 ">
             <img src={logo} className="h-8 sm:h-14 rounded-2xl" alt="logo" />
             <p className="text-2xl sm:text-[32px] my-auto ms-[12px] font-semibold">
               Brooklyn
             </p>
-          </div>
+          </a>
         </div>
 
         <div className="lg:flex items-center">

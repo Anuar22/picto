@@ -38,7 +38,7 @@ const workStepData = [
 
 const WorkProcess = () => {
   return (
-    <div className="content grid xl:grid-cols-2 xl:items-center px-2 bg-[#F0F1F3]">
+    <div className="content grid xl:grid-cols-2 xl:items-center px-2 xl:mt-35">
       <div className="lg:pe-10 xl:pe-35.75 mb-3">
         <p className="section-title max-xl:text-center">Work Process</p>
         <p className="mt-6 mb-4 md:text-[18px] text-sm font-normal max-xl:text-center text-gray-500">

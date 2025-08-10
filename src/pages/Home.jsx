@@ -28,13 +28,14 @@ const Home = () => {
       <div className="h_118 bg-gray-900 ">
         <WorkTogether />
       </div>
-      <div className="h-196 blog-background">
+      <div className="h_196 blog-background">
         <Blog />
       </div>
-      <div className="min-md:h-219 bg-soft-white">
+      <div className="min-md:h_219 bg-soft-white">
         <Profession />
       </div>
       <div className="h-138">
+        {/* WORKING on this */}
         <HappyClients />
       </div>
       <div className="h_133.5">

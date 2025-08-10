@@ -43,11 +43,11 @@ body {
 }
 
 .content {
-  @apply max-xxl:w-full min-xxl:max-w-[1320px] min-xxl:mx-auto;
+  @apply max-xxl:w-full xxl:max-w-[1320px] xxl:mx-auto;
 }
 
 .section-title {
-  @apply text-[#132238] md:font-semibold text-2xl sm:text-4xl md:text-5xl font-medium;
+  @apply text-[#132238] md:font-semibold text-3xl sm:text-4xl md:text-5xl font-medium;
 }
 
 .center {
