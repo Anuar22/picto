@@ -43,11 +43,11 @@ const Form = () => {
             required
           />
 
-          <div className="flex">
+          <div className="flex max-xs:flex-col max-xs:gap-4">
             <input
               type="text"
               placeholder="Budget*"
-              className="input input-lg border-0 border-b-2 focus:outline-none focus:placeholder:text-picto-primary placeholder:text-lg focus:border-picto-primary border-[#E6E8EB] w-[50%] me-5 rounded-none px-0"
+              className={`${commonClass} xs:w-[50%] me-5`}
               required
             />
             <input
@@ -64,9 +64,10 @@ const Form = () => {
             className={`${commonClass}`}
             required
           />
+          {/* WORKING ON THIS */}
           <button
             type="submit"
-            className="btn flex gap-3 btn-primary text-[16px] font-semibold w-35.25 h-12 rounded-sm mt-5 max-sm:12.5 min-[1032px]:mt-12.5"
+            className="btn gap-3 btn-primary rounded-sm mt-5 text-[16px] font-semibold w-35.25 h_12  max-sm:12.5 lg:mt-12.5"
           >
             Submit {telegramSVG}
           </button>
