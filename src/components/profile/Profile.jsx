@@ -17,7 +17,7 @@ const Profile = () => {
 
   return (
     <div
-      className={`relative mx-4 min-xxl:mx-0.5 -bottom-20 lg:-bottom-28 z-10 rounded-2xl bg-white drop-shadow-2xl max-xl:mb-5 shadow-white xl:p-28 lg:p-20 md:p-16 sm:p-10 p-4`}
+      className={`relative mx-4 xxl:mx-0.5 -bottom-20 lg:-bottom-28 z-10 rounded-2xl bg-white drop-shadow-2xl max-xl:mb-5 shadow-white xl:p-28 lg:p-20 md:p-16 sm:p-10 p-4`}
       id="profile"
     >
       <div className="flex max-md:flex-col justify-between items-center gap-6">
@@ -40,8 +40,8 @@ const Profile = () => {
           </div>
         </div>
 
-        {/* Profile Description */}
-        <div className="max-sm:w-full w-[33rem] min-[1160px]:p-5">
+        {/* TODO: WIDTH Profile Description */}
+        <div className="max-sm:w-full w-[33rem]">
           <h2
             className={`text-2xl xxs:text-3xl sm:text-4xl lg:text-[38px] text-[min(24px,38px)] max-md:text-center font-semibold mb-8 ${
               dark && "text-black"

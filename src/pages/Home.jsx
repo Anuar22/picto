@@ -1,6 +1,5 @@
 import Introduction from "../components/introduction/Introduction";
 import Profile from "../components/profile/Profile";
-import "../../index.css";
 import WorkProcess from "../components/workProcess/WorkProcess";
 import Portfolio from "../components/portfolio/Portfolio";
 import WorkTogether from "../components/workTogether/WorkTogether";
@@ -9,6 +8,7 @@ import Profession from "../components/profession/Profession";
 import HappyClients from "../components/happyClients/HappyClients";
 import Testimonial from "../components/testimonial/Testimonial";
 import Contact from "../components/contact/Contact";
+import "../../index.css";
 
 const Home = () => {
   return (
@@ -34,14 +34,13 @@ const Home = () => {
       <div className="min-md:h_219 bg-soft-white">
         <Profession />
       </div>
-      <div className="h-138">
-        {/* WORKING on this */}
+      <div className="h_138">
         <HappyClients />
       </div>
       <div className="h_133.5">
         <Testimonial />
       </div>
-      <div className="min-lg:h-165 relative z-10">
+      <div className="">
         <Contact />
       </div>
     </div>

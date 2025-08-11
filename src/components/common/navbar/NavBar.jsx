@@ -142,7 +142,7 @@ const NavBar = () => {
 
           <p className="">
             <Link
-              className="btn btn-md sm:btn-lg btn-primary"
+              className="btn btn-sm xs:btn-md sm:btn-lg btn-primary"
               href="#contact"
               to={`contact`}
               smooth={true}

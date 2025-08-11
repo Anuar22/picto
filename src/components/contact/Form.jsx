@@ -1,7 +1,6 @@
 const telegramSVG = (
   <svg
-    width="24"
-    height="24"
+    className="w-6 aspect-square"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -13,75 +12,58 @@ const telegramSVG = (
   </svg>
 );
 
+const commonClass =
+  "input input-lg border-0 border-b-2 focus:outline-none focus:placeholder:text-picto-primary placeholder:text-[15px] md:placeholder:text-lg focus:border-picto-primary border-[#E6E8EB] w-full rounded-none px-0";
+
 const Form = () => {
   return (
-    <div className="">
-      <p className="text-[14px] min-sm:text-lg font-normal text-[#87909D]">
+    <div>
+      <p className="text-[14px] sm:text-lg font-normal text-soft-dark">
         There are many variations of passages of Lorem Ipsu available, but the
         majority have suffered alte.
       </p>
       <div className="mx-2">
         <form className="flex flex-col gap-4 mt-4">
-          <label /* Name */ className="floating-label border-0 ">
-            <input
-              type="text"
-              placeholder="Name*"
-              className="input input-lg border-0 border-gray-100 w-full"
-              required
-            />
-            <span>Name*</span>
-          </label>
-          <label /* Email */ className="floating-label border-none ">
-            <input
-              type="email"
-              placeholder="Email*"
-              className="input input-lg border-0 border-gray-100 w-full"
-              required
-            />
-            <span>Email*</span>
-          </label>
-          <label /* Location */ className="floating-label border-0 ">
-            <input
-              type="text"
-              placeholder="Location*"
-              className="input input-lg border-0 border-gray-100 w-full"
-              required
-            />
-            <span>Location*</span>
-          </label>
+          <input
+            type="text"
+            placeholder="Name*"
+            className={`${commonClass}`}
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email*"
+            className={`${commonClass}`}
+            required
+          />
+          <input
+            type="text"
+            placeholder="Location*"
+            className={`${commonClass}`}
+            required
+          />
 
           <div className="flex">
-            <label /* Budget */ className="floating-label border-0 w-[35%]">
-              <input
-                type="text"
-                placeholder="Budget*"
-                className="input input-lg border-0 border-gray-100 "
-                required
-              />
-              <span>Budget*</span>
-            </label>
-            <label
-              /* Subject */ className="floating-label border-0 w-full ms-6"
-            >
-              <input
-                type="text"
-                placeholder="Subject*"
-                className="input input-lg border-0 border-gray-100 w-full"
-                required
-              />
-              <span>Subject*</span>
-            </label>
-          </div>
-
-          <label /* Message */ className="floating-label border-0 ">
             <input
               type="text"
-              placeholder="Message*"
-              className="input input-lg border-0 border-gray-100 w-full"
+              placeholder="Budget*"
+              className="input input-lg border-0 border-b-2 focus:outline-none focus:placeholder:text-picto-primary placeholder:text-lg focus:border-picto-primary border-[#E6E8EB] w-[50%] me-5 rounded-none px-0"
               required
             />
-            <span>Message*</span>
-          </label>
+            <input
+              type="text"
+              placeholder="Subject*"
+              className={`${commonClass}`}
+              required
+            />
+          </div>
+
+          <input
+            type="text"
+            placeholder="Message*"
+            className={`${commonClass}`}
+            required
+          />
           <button
             type="submit"
             className="btn flex gap-3 btn-primary text-[16px] font-semibold w-35.25 h-12 rounded-sm mt-5 max-sm:12.5 min-[1032px]:mt-12.5"

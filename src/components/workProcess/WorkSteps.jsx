@@ -11,7 +11,7 @@ const WorkSteps = ({ data, style }) => {
       onMouseOut={() => setHover(false)}
     >
       <div
-        className={`w-11 h-11 min-sm:w-18 min-sm:h-18 ${
+        className={`w-11 h-11 sm:w-18 sm:h-18 ${
           hover ? "bg-picto-primary" : "bg-[#EDD8FF80]"
         } text-center center rounded-md`}
       >
@@ -24,9 +24,9 @@ const WorkSteps = ({ data, style }) => {
           <path d={data?.svgPath} fill={`${hover ? "#FFFFFF" : "#A53DFF"}`} />
         </svg>
       </div>
-      <div className="mt-3 min-xs:mt-8 min-sm:mt-8">
-        <p className="font-semibold min-sm:text-xl">{`${data?.id}. ${data?.title}`}</p>
-        <p className="mt-3 text-[13px] min-sm:text-[16px] text-[#697482] md:font-medium">
+      <div className="mt-3 xs:mt-8 sm:mt-8">
+        <p className="font-semibold sm:text-xl">{`${data?.id}. ${data?.title}`}</p>
+        <p className="mt-3 text-[13px] sm:text-[16px] text-[#697482] md:font-medium">
           {data?.description}
         </p>
       </div>

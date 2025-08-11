@@ -32,11 +32,12 @@ NOTE: 1px = 0.0625rem; 1rem = 16px
   --color-picto-primary: #9929fb;
   --color-picto-primary-dark: #650fa0;
   --color-soft-white: #f0f1f3;
-  --container-max-width: 1920px !important;
+  --color-soft-dark: #87909d;
+  /* --container-max-width: 1920px !important; */
 }
 
 .btn-primary {
-  @apply bg-(--color-picto-primary) border-0 text-white hover:bg-[#9929ff] hover:scale-[102%] transition-all duration-500;
+  @apply bg-picto-primary border-0 text-white hover:scale-[102%] hover:bg-picto-primary-dark transition-all duration-500;
 }
 body {
   font-family: "Work Sans", sans-serif;
