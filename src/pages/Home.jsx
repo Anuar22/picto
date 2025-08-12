@@ -25,6 +25,7 @@ const Home = () => {
       <div className="h_368">
         <Portfolio />
       </div>
+      z
       <div className="h_118 bg-gray-900 ">
         <WorkTogether />
       </div>

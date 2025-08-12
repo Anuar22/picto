@@ -16,27 +16,29 @@ const navItems = [
   { id: 6, name: "Services", url: "services" },
 ];
 
-const menu = navItems.map((item) => (
-  <li key={item.id} onMouseDown={(e) => e.preventDefault()}>
-    <Link
-      to={item.url.toLowerCase()}
-      smooth={true}
-      duration={1000}
-      spy={true}
-      offset={-140}
-      activeStyle={{
-        backgroundColor: "#9929fb",
-        color: "white",
-      }}
-      className={`hover:text-picto-primary px-5 py-3 mx-1`}
-    >
-      {item.name}
-    </Link>
-  </li>
-));
-
 const NavBar = () => {
   const [position, setPosition] = useState(0);
+  const [hover, setHover] = useState(false);
+
+  const menu = navItems.map((item) => (
+    <li key={item.id} onMouseDown={(e) => e.preventDefault()}>
+      <Link
+        onClick={() => console.log(false)}
+        to={item.url.toLowerCase()}
+        smooth={true}
+        duration={1000}
+        spy={true}
+        offset={-140}
+        activeStyle={{
+          backgroundColor: "#9929fb",
+          color: "white",
+        }}
+        className={`hover:text-picto-primary px-5 py-3 mx-1`}
+      >
+        {item.name}
+      </Link>
+    </li>
+  ));
 
   useEffect(() => {
     const handleScroll = () => {
@@ -73,7 +75,7 @@ const NavBar = () => {
     >
       <div className="navbar flex justify-between mx-auto content">
         <div className="flex items-center justify-between">
-          <div className="dropdown">
+          <div className="dropdown" onClick={() => setHover(true)}>
             {/* Menu for small screen start */}
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               {/* TODO: dynamic menu bar (X | =) */}
@@ -94,7 +96,7 @@ const NavBar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-lg dropdown-content rounded-box z-1 mt-3 w-lvw p-2 shadow font-semibold flex-nowrap bg-white text-black"
+              className={`menu menu-lg dropdown-content rounded-box z-1 mt-3 w-lvw p-2 shadow font-semibold flex-nowrap bg-white text-black`}
             >
               {/* TODO: small menu should close after click on it */}
               {menu}

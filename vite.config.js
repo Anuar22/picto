@@ -9,16 +9,16 @@ export default defineConfig(({ mode }) => {
     base: `/${env.VITE_REPO_NAME}/`,
     plugins: [react(), tailwindcss()],
     //   COMMENT: server object is used for testing responsive design on different devices
-    //   server: {
-    //     open: true,
-    //     host: false, // Allow access from network devices
-    //     proxy: {
-    //       "/api": {
-    //         target: "http://localhost:5000",
-    //         changeOrigin: true,
-    //         secure: true,
-    //       },
+    // server: {
+    //   open: true,
+    //   host: true, // Allow access from network devices
+    //   proxy: {
+    //     "/api": {
+    //       target: "http://localhost:5000",
+    //       changeOrigin: true,
+    //       secure: true,
     //     },
     //   },
+    // },
   };
 });

@@ -1,6 +1,6 @@
 const telegramSVG = (
   <svg
-    className="w-6 aspect-square"
+    className="w-4 md:w-6 aspect-square"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +18,7 @@ const commonClass =
 const Form = () => {
   return (
     <div>
-      <p className="text-[14px] sm:text-lg font-normal text-soft-dark">
+      <p className="text-[12px] xs:text-[14px] max-lg:text-center sm:text-lg font-normal text-soft-dark">
         There are many variations of passages of Lorem Ipsu available, but the
         majority have suffered alte.
       </p>
@@ -67,7 +67,7 @@ const Form = () => {
           {/* WORKING ON THIS */}
           <button
             type="submit"
-            className="btn gap-3 btn-primary rounded-sm mt-5 text-[16px] font-semibold w-35.25 h_12  max-sm:12.5 lg:mt-12.5"
+            className="btn gap-3 max-lg:mx-auto btn-primary rounded-sm mt-5 text-[13px] md:text-[16px] w-fit font-semibold lg:mt-12.5 p-2 md:px-4"
           >
             Submit {telegramSVG}
           </button>

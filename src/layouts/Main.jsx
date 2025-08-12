@@ -19,7 +19,9 @@ const Main = () => {
       <div data-theme={theme} className="relative">
         <NavBar />
         <Outlet />
-        <Footer />
+        <div className="bg-[#2A374A]">
+          <Footer />
+        </div>
         <ScrollToTop />
       </div>
     </ThemeContext.Provider>

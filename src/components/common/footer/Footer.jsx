@@ -11,22 +11,23 @@ const navItems = [
   { id: 6, name: "Services", url: "Services" },
   { id: 7, name: "Contact", url: "Contact" },
 ];
+const copyrightYear = new Date().getFullYear();
 
 const Footer = () => {
-  const copyrightYear = new Date().getFullYear();
-
   return (
-    <div className="bg-[#2A374A] h-[320px] flex justify-between relative">
-      <div className="flex max-md:flex-col justify-between mx-0 lg:px-[2%] xl:px-[10%] 2xl:px-[15%] items-center h-full w-full text-neutral-200 absolute">
-        <div className="flex bg-whit border-0 gap-3 lg:me-10 shrink-0">
-          <img src={logo} className="h-14 rounded-2xl" alt="logo" />
-          <p className="text-4xl font-semibold my-auto">Brooklyn</p>
-        </div>
-        <div className="mx-3 grid grid-flow-row grid-cols-3 lg:grid-flow-col lg:grid-rows-1">
+    <div className="pt-25 md:pt-40 content max-2xl:px-3">
+      <div className="flex max-md:flex-col justify-between mx-0 items-center h-full w-full text-neutral-200">
+        <a href="#!" className="flex items-center border-0">
+          <img src={logo} className="h-8 sm:h-14 rounded-2xl" alt="logo" />
+          <p className="text-3xl sm:text-[32px] my-auto ms-[12px] font-semibold">
+            Brooklyn
+          </p>
+        </a>
+        <div className="mx-3 grid grid-flow-row grid-cols-4 max-md:my-7 lg:grid-flow-col lg:grid-rows-1">
           {navItems.map((item) => (
             <a
               key={item.id}
-              className="mx-3 group inline-block relative w-fit"
+              className="mx-2 group inline-block relative w-fit text-[12px] sm:text-[16px]"
               href={`#${item.url.toLowerCase()}`}
             >
               {item.name}
@@ -34,10 +35,15 @@ const Footer = () => {
             </a>
           ))}
         </div>
-        <p>Copyright &copy; {copyrightYear} Picto.</p>
+        <p className="text-[12px] sm:text-[16px]">
+          Copyright &copy; {copyrightYear} Picto.
+        </p>
       </div>
-      <p className="text-white absolute bottom-0 left-0 text-center w-full pb-5">
-        Made by ❤️ ThemeWagon{" "}
+      <p className="text-white text-center w-full py-10">
+        Made by ❤️{" "}
+        <a href="https://www.themewagon.com" target="_blank">
+          ThemeWagon
+        </a>
       </p>
     </div>
   );
