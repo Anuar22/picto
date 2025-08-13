@@ -65,7 +65,10 @@ const projectData = [
 
 const Portfolio = () => {
   return (
-    <div className="content xl:mt-25 mb-10 md:mb-25 max-xxl:p-2" id="portfolio">
+    <div
+      className="content mt-10 md:mt-15 xl:mt-25 mb-10 md:mb-25 max-xxl:p-2"
+      id="portfolio"
+    >
       <div className="xl:mb-17.5 mb-5">
         <div className="max-sm:px-2 text-center mx-auto">
           <p className="section-title ">Portfolio</p>

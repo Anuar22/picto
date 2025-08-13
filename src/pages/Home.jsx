@@ -19,31 +19,22 @@ const Home = () => {
           <Profile />
         </div>
       </div>
-      <div className="bg-soft-white min-xl:h_249.5 pt-30">
+      <div className="bg-soft-white pt-30">
         <WorkProcess />
       </div>
-      <div className="h_368">
-        <Portfolio />
-      </div>
-      z
-      <div className="h_118 bg-gray-900 ">
+      <Portfolio />
+      <div className="bg-gray-900">
         <WorkTogether />
       </div>
-      <div className="h_196 blog-background">
+      <div className="blog-background">
         <Blog />
       </div>
-      <div className="min-md:h_219 bg-soft-white">
+      <div className="bg-soft-white">
         <Profession />
       </div>
-      <div className="h_138">
-        <HappyClients />
-      </div>
-      <div className="h_133.5">
-        <Testimonial />
-      </div>
-      <div className="">
-        <Contact />
-      </div>
+      <HappyClients />
+      <Testimonial />
+      <Contact />
     </div>
   );
 };

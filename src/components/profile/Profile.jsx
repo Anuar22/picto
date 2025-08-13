@@ -1,20 +1,9 @@
-import React, { useContext, useEffect, useState } from "react";
 import person from "../../assets/images/person2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import { ThemeContext } from "../../layouts/Main";
 import SocialMedia from "../common/socialMedia/SocialMedia";
 
 const Profile = () => {
-  // COMMENT: Dark Theme config start
-  const [theme] = useContext(ThemeContext);
-  const [dark, setDark] = useState(theme === "dark");
-  useEffect(() => {
-    theme === "dark" ? setDark(true) : setDark(false);
-  }, [theme]);
-
-  // COMMENT: Dark Theme config end
-
   return (
     <div
       className={`relative mx-4 xxl:mx-0.5 -bottom-20 lg:-bottom-28 z-10 rounded-2xl bg-white drop-shadow-2xl max-xl:mb-5 shadow-white xl:p-28 lg:p-20 md:p-16 sm:p-10 p-4`}
@@ -40,19 +29,14 @@ const Profile = () => {
           </div>
         </div>
 
-        {/* TODO: WIDTH Profile Description */}
         <div className="max-sm:w-full w-[33rem]">
           <h2
-            className={`text-2xl xxs:text-3xl sm:text-4xl lg:text-[38px] text-[min(24px,38px)] max-md:text-center font-semibold mb-8 ${
-              dark && "text-black"
-            }`}
+            className={`text-2xl xxs:text-3xl sm:text-4xl lg:text-[38px] text-[min(24px,38px)] max-md:text-center font-semibold mb-8`}
           >
             I am Professional User Experience Designer
           </h2>
           <div
-            className={`text-xs xs:text-[16px] lg:text-lg font-normal ${
-              dark ? "text-gray-800" : "text-gray-600"
-            }`}
+            className={`text-xs xs:text-[16px] lg:text-lg font-normal max-md:text-center text-gray-600`}
           >
             <p className={``}>
               I design and develop services for customers specializing creating
@@ -72,9 +56,7 @@ const Profile = () => {
               My Projects
             </a>
             <a
-              className={`btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 hover:border-picto-primary bg-white duration-300 transition-all hover:text-picto-primary  ms-4 text-xs xxs:text-[14px] sm:text-[16px] ${
-                dark && "bg-transparent"
-              }`}
+              className={`btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 hover:border-picto-primary bg-white duration-300 transition-all hover:text-picto-primary  ms-4 text-xs xxs:text-[14px] sm:text-[16px]`}
               href="#!"
             >
               <FontAwesomeIcon icon={faDownload} /> Download CV

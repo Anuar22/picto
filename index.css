@@ -4,16 +4,6 @@
   themes: light --default, dark --prefersdark, cupcake;
 }
 
-/* 
-NOTE: 1px = 0.0625rem; 1rem = 16px
- 536px = 33.5rem
- 363px = 22.6875rem
- 35rem = 560px
- 340px = 21.25rem
- 1320px = 82.5rem
- 370px = 23.125rem
- */
-
 * {
   transition-property: all;
   transition-timing-function: var(
@@ -33,7 +23,6 @@ NOTE: 1px = 0.0625rem; 1rem = 16px
   --color-picto-primary-dark: #650fa0;
   --color-soft-white: #f0f1f3;
   --color-soft-dark: #87909d;
-  /* --container-max-width: 1920px !important; */
 }
 
 .btn-primary {
@@ -48,7 +37,7 @@ body {
 }
 
 .section-title {
-  @apply text-[#132238] md:font-semibold text-3xl sm:text-4xl md:text-5xl font-medium;
+  @apply md:font-semibold text-3xl sm:text-4xl md:text-5xl font-medium;
 }
 
 .center {

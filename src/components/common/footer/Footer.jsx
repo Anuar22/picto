@@ -1,5 +1,4 @@
 import logo from "../../../assets/logo.png";
-import "./footer.css";
 
 /* Footer nabLinks */
 const navItems = [
@@ -23,7 +22,7 @@ const Footer = () => {
             Brooklyn
           </p>
         </a>
-        <div className="mx-3 grid grid-flow-row grid-cols-4 max-md:my-7 lg:grid-flow-col lg:grid-rows-1">
+        <div className="mx-7 max-md:my-7 text-center">
           {navItems.map((item) => (
             <a
               key={item.id}

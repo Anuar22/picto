@@ -1,8 +1,7 @@
-import React, { useContext } from "react";
 import person from "../../assets/images/person.png";
 import "./introduction.css";
 import InformationSummary from "./InformationSummary";
-import { ThemeContext } from "../../layouts/Main";
+
 // Information summary data
 const informationSummaryData = [
   {
@@ -23,11 +22,9 @@ const informationSummaryData = [
 ];
 
 const Introduction = () => {
-  const [theme] = useContext(ThemeContext); /* Theme context: dark/light */
-
   return (
     <div
-      className="flex max-lg:flex-col-reverse sm:justify-between pt-10 lg:pt-31.5 lg:mb-27.5 max-xl:gap-2 p-2"
+      className="flex max-lg:flex-col-reverse sm:justify-between pt-10 lg:pt-31.5 lg:mb-27.5 max-xl:gap-2 p-2 max-xxl:px-4"
       id="introduction"
     >
       <div className="w-full flex flex-col justify-between max-lg:text-center">
@@ -65,9 +62,7 @@ const Introduction = () => {
         className={`max-w-134 w-full h-full max-lg:mx-auto aspect-[536/636] relative`}
       >
         <img
-          className={`shadow-2xl shadow-gray-200 w-full h-full absolute bottom-0 object-cover ${
-            theme == "dark" ? "bg-gray-300" : "bg-white"
-          } rounded-3xl`}
+          className={`shadow-2xl shadow-gray-200 w-full h-full absolute bottom-0 object-cover bg-white rounded-3xl`}
           src={person}
           alt="person"
         />

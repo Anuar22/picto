@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const WorkSteps = ({ data, style }) => {
   const [hover, setHover] = useState(false);
@@ -24,9 +24,9 @@ const WorkSteps = ({ data, style }) => {
           <path d={data?.svgPath} fill={`${hover ? "#FFFFFF" : "#A53DFF"}`} />
         </svg>
       </div>
-      <div className="mt-3 xs:mt-8 sm:mt-8">
+      <div className="mt-3 xs:mt-4 sm:mt-8">
         <p className="font-semibold sm:text-xl">{`${data?.id}. ${data?.title}`}</p>
-        <p className="mt-3 text-[13px] sm:text-[16px] text-[#697482] md:font-medium">
+        <p className="mt-3 text-[13px] sm:text-[16px] text-[#697482]">
           {data?.description}
         </p>
       </div>

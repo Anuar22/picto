@@ -1,4 +1,3 @@
-import "./workProcess.css";
 import WorkSteps from "./WorkSteps";
 
 const workStepData = [
@@ -39,10 +38,10 @@ const workStepData = [
 const WorkProcess = () => {
   return (
     <div
-      className="content grid xl:grid-cols-2 xl:items-center px-2 xl:mt-35"
+      className="content grid xl:grid-cols-2 xl:items-center px-2 py-5 md:py-10 lg:py-25 xl:py-35 max-xxl:px-4"
       id="work-process"
     >
-      <div className="lg:pe-10 xl:pe-35.75 mb-3">
+      <div className="lg:pe-10 xl:pe-35.75 max-xs:mb-3 max-xl:mb-8">
         <p className="section-title max-xl:text-center">Work Process</p>
         <p className="mt-6 mb-4 md:text-[18px] text-sm font-normal max-xl:text-center text-gray-500">
           Driven by design and powered by code, I create digital interfaces that
@@ -59,7 +58,6 @@ const WorkProcess = () => {
       <div className="grid xs:grid-cols-2 justify-end my-2 w-fit mx-auto ">
         {workStepData.map((data, index) => {
           return (
-            /*  min-[440px]:w-52 min-[440px]:h-46 min-xs:w-65 min-xs:h-57.5 min-sm:w-78 min-sm:h-69 */
             <WorkSteps
               data={data}
               style={`max-xs:mt-3 p-4 sm:p-8 bg-white aspect-auto sm:max-w-78 ${
