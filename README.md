@@ -37,11 +37,11 @@ bun dev
 ## Author
 
 ```
-Design and code is completely written by ThemeWagon and development team.
+code is completely written by ThemeWagon and development team.
 ```
 
 ## License
 
-- Design and Code is Copyright &copy; [ThemeWagon](https://www.themewagon.com/)
+- Design and Code is Copyright &copy; <a href="http://themewagon.com/" target="_blank">ThemeWagon</a>
 - Licensed cover under [MIT]
-- Developed by [ThemeWagon](https://themewagon.com)
+- Developed by <a href="http://themewagon.com/" target="_blank">ThemeWagon</a>
