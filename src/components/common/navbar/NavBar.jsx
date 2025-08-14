@@ -85,12 +85,18 @@ const NavBar = () => {
             </ul>
           </div>
 
-          <a href="#!" className="flex items-center border-0 ">
+          <Link
+            href="#introduction"
+            to={`introduction`}
+            smooth={true}
+            duration={900}
+            className="flex items-center border-0 lg:max-xxl:ps-5"
+          >
             <img src={logo} className="h-8 sm:h-14 rounded-2xl" alt="logo" />
             <p className="text-2xl sm:text-[32px] my-auto ms-[12px] font-semibold">
               Brooklyn
             </p>
-          </a>
+          </Link>
         </div>
 
         <div className="lg:flex items-center">

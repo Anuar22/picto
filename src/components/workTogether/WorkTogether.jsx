@@ -3,14 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const WorkTogether = () => {
   return (
-    <div className="py-25 max-w-159.25 mx-auto px-2">
+    <div className="py-25 max-w-169 mx-auto px-2">
       <div className="text-center">
         <p className="text-white md:font-semibold text-2xl sm:text-3xl md:text-5xl pb-8">
-          Do you have Project Idia? Let's discuss your project!
+          Do you have a Project Idea? Let's discuss your project!
         </p>
         <p className="text-[#A5ACB5] text-xs sm:text-lg font-normal text-center pb-8">
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration.
+          I'm always open to discussing new projects and creative ideas. Let's
+          connect and build something amazing together.
         </p>
         <a
           href="#!"

@@ -162,8 +162,8 @@ const HappyClients = () => {
       <div className="max-w-144.25 text-center ">
         <p className="section-title mb-6">Happy Clients</p>
         <p className="text-[14px] sm:text-lg text-soft-dark font-normal">
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration.
+          I've had the pleasure of working with a diverse range of companies,
+          from startups to established brands.
         </p>
       </div>
       <Marquee pauseOnHover={true} speed={100} className="">

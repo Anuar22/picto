@@ -39,8 +39,8 @@ const Contact = () => {
                 Let’s discuss your Project
               </p>
               <p className="text-[12px] xs:text-[14px] sm:text-lg md:text-lg max-lg:text-center pt-4 font-normal text-soft-dark">
-                There are many variations of passages of Lorem Ipsu available.
-                but the majority have suffered alte.
+                I'm available for freelance work. Drop me a line if you have a
+                project you think I'd be a good fit for.
               </p>
             </div>
             <div className="my-8.75 sm:max-lg:flex justify-between items-center">

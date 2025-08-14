@@ -19,8 +19,8 @@ const Form = () => {
   return (
     <div>
       <p className="text-[12px] xs:text-[14px] max-lg:text-center sm:text-lg font-normal text-soft-dark">
-        There are many variations of passages of Lorem Ipsu available, but the
-        majority have suffered alte.
+        I'm always open to discussing product design work or partnership
+        opportunities.
       </p>
       <div className="mx-2">
         <form className="flex flex-col gap-4 mt-4">

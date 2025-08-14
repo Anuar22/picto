@@ -82,8 +82,8 @@ const Blog = () => {
       <div className="max-w-135 text-center mx-auto pb-17.5">
         <p className="section-title pb-6">Blog</p>
         <p className="text-xs xs:text-[16px] md:text-lg text-gray-400">
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration.
+          Check out my recent blog posts where I share insights on design,
+          development, and the latest industry trends.
         </p>
       </div>
       <Swiper
