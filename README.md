@@ -37,7 +37,7 @@ bun dev
 ## Author
 
 ```
-code is completely written by ThemeWagon and development team.
+Developed by ThemeWagon and development team.
 ```
 
 ## License
